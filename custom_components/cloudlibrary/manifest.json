@@ -1,6 +1,6 @@
 {
   "domain": "cloudlibrary",
-  "name": "Cloud Library",
+  "name": "cloudLibrary",
   "codeowners": ["@geertmeersman"],
   "config_flow": true,
   "dependencies": [],

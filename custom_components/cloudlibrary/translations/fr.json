@@ -17,8 +17,8 @@
           "pin": "Mot de passe / Code PIN",
           "scan_interval": "Intervalle de mise à jour (min)"
         },
-        "description": "Configurez votre compte utilisateur Cloud Library",
-        "title": "Nouveau compte Cloud Library"
+        "description": "Configurez votre compte utilisateur cloudLibrary",
+        "title": "Nouveau compte cloudLibrary"
       }
     }
   },
@@ -156,7 +156,7 @@
           "barcode": "Profil de la bibliothèque",
           "pin": "Mot de passe / Code PIN"
         },
-        "description": "À faire lorsque vous avez modifié vos informations d'identification de compte sur 'Cloud Library'",
+        "description": "À faire lorsque vous avez modifié vos informations d'identification de compte sur 'cloudLibrary'",
         "title": "Mettre à jour vos informations d'identification"
       },
       "init": {

@@ -17,8 +17,8 @@
           "pin": "Password/Pincode",
           "scan_interval": "Update interval (min)"
         },
-        "description": "Set up your Cloud Library user account",
-        "title": "New Cloud Library account"
+        "description": "Set up your cloudLibrary user account",
+        "title": "New cloudLibrary account"
       }
     }
   },
@@ -156,7 +156,7 @@
           "barcode": "Library profile",
           "pin": "Password/Pincode"
         },
-        "description": "To do when you changed your account credentials on 'Cloud Library'",
+        "description": "To do when you changed your account credentials on 'cloudLibrary'",
         "title": "Update your credentials"
       },
       "init": {
