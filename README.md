@@ -58,6 +58,7 @@ Cloud Library sensors for
   - [Installation](#installation)
     - [Using HACS (recommended)](#using-hacs-recommended)
     - [Manual](#manual)
+  - [Configuration](#configuration)
   - [Contributions are welcome!](#contributions-are-welcome)
   - [Troubleshooting](#troubleshooting)
     - [Enable debug logging](#enable-debug-logging)
@@ -92,6 +93,14 @@ This integration will set up the following platforms.
 | Platform       | Description                                |
 | -------------- | ------------------------------------------ |
 | `cloudlibrary` | Home Assistant component for Cloud Library |
+
+## Configuration
+
+The integration needs 3 inputs:
+
+- barcode: Your Cloud Library login
+- pin: Your Cloud Library password
+- library id: Your Cloud Library ID (this you can fetch from the url when you connect to the website: https://ebook.yourcloudlibrary.com/library/&lt;HERE YOU FIND THE LIBRARY ID&gt;/mybooks/current)
 
 ## Contributions are welcome!
 
