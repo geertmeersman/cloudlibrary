@@ -41,13 +41,13 @@
           "email": {
             "name": "Email"
           },
-          "emailVerified": {
+          "emailverified": {
             "name": "Email verified"
           },
           "last_synced": {
             "name": "Last synced"
           },
-          "patronPendingEmail": {
+          "patronpendingemail": {
             "name": "Patron pending email"
           }
         }
@@ -71,25 +71,25 @@
       "library": {
         "name": "Library",
         "state_attributes": {
-          "allowRenewals": {
+          "allowrenewals": {
             "name": "Allow Renewals"
           },
-          "libraryCatalogUrl": {
+          "librarycatalogurl": {
             "name": "Library Catalog Url"
           },
-          "maxHeldDocuments": {
+          "maxhelddocuments": {
             "name": "Max Held Documents"
           },
-          "maxLoanTimeUnit": {
+          "maxloantimeunit": {
             "name": "Max Loan Time Unit"
           },
-          "maxLoanTimes": {
+          "maxloantimes": {
             "name": "Max Loan Times"
           },
-          "maxLoanedDocuments": {
+          "maxloaneddocuments": {
             "name": "Max Loaned Documents"
           },
-          "supportEmail": {
+          "supportemail": {
             "name": "Support Email"
           }
         }
@@ -119,13 +119,13 @@
           "email": {
             "name": "Email"
           },
-          "emailVerified": {
+          "emailverified": {
             "name": "Email verified"
           },
           "last_synced": {
             "name": "Last synced"
           },
-          "patronPendingEmail": {
+          "patronpendingemail": {
             "name": "Patron pending email"
           }
         }

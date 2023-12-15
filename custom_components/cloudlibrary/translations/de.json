@@ -1,27 +1,27 @@
 {
   "config": {
     "abort": {
-      "already_configured": "Das Konto ist bereits konfiguriert"
+      "already_configured": "Das konto ist bereits konfiguriert"
     },
     "error": {
       "cannot_connect": "Verbindung fehlgeschlagen",
-      "invalid_auth": "Ungültige Authentifizierung",
+      "invalid_auth": "Ungültige authentifizierung",
       "service_error": "Dienst nicht verfügbar",
-      "unknown": "Unerwarteter Fehler"
+      "unknown": "Unerwarteter fehler"
     },
     "step": {
       "abort": {
-        "already_configured": "Das Konto ist bereits konfiguriert"
+        "already_configured": "Das konto ist bereits konfiguriert"
       },
       "connection_init": {
         "data": {
           "barcode": "Bibliotheksprofil",
-          "library": "Bibliotheks-ID",
-          "pin": "Passwort / PIN-Code",
+          "library": "Bibliotheks-id",
+          "pin": "Passwort / Pin-code",
           "scan_interval": "Aktualisierungsintervall (min)"
         },
-        "description": "Richten Sie Ihr Cloud Library Benutzerkonto ein",
-        "title": "Neues Cloud Library-Konto"
+        "description": "Richten sie ihr cloud library benutzerkonto ein",
+        "title": "Neues cloud library-konto"
       }
     }
   },
@@ -36,19 +36,19 @@
         }
       },
       "email": {
-        "name": "E-Mail",
+        "name": "E-mail",
         "state_attributes": {
           "email": {
-            "name": "E-Mail"
+            "name": "E-mail"
           },
-          "emailVerified": {
-            "name": "E-Mail verifiziert"
+          "emailverified": {
+            "name": "E-mail verifiziert"
           },
           "last_synced": {
-            "name": "Letzte Synchronisierung"
+            "name": "Letzte synchronisierung"
           },
-          "patronPendingEmail": {
-            "name": "E-Mail wartet auf Genehmigung"
+          "patronpendingemail": {
+            "name": "E-mail wartet auf genehmigung"
           }
         }
       },
@@ -71,26 +71,26 @@
       "library": {
         "name": "Bibliothek",
         "state_attributes": {
-          "allowRenewals": {
+          "allowrenewals": {
             "name": "Verlängerungen erlauben"
           },
-          "libraryCatalogUrl": {
-            "name": "URL des Bibliothekskatalogs"
+          "librarycatalogurl": {
+            "name": "URL des bibliothekskatalogs"
           },
-          "maxHeldDocuments": {
-            "name": "Maximale Anzahl gehaltener Dokumente"
+          "maxhelddocuments": {
+            "name": "Maximale anzahl gehaltener dokumente"
           },
-          "maxLoanTimeUnit": {
-            "name": "Maximale Ausleihzeit Einheit"
+          "maxloantimeunit": {
+            "name": "Maximale ausleihzeit einheit"
           },
-          "maxLoanTimes": {
-            "name": "Maximale Ausleihzeiten"
+          "maxloantimes": {
+            "name": "Maximale ausleihzeiten"
           },
-          "maxLoanedDocuments": {
-            "name": "Maximale Anzahl ausgeliehener Dokumente"
+          "maxloaneddocuments": {
+            "name": "Maximale anzahl ausgeliehener dokumente"
           },
-          "supportEmail": {
-            "name": "Support-E-Mail"
+          "supportemail": {
+            "name": "Support-e-mail"
           }
         }
       },
@@ -98,7 +98,7 @@
         "name": "Benachrichtigungen",
         "state_attributes": {
           "last_synced": {
-            "name": "Letzte Synchronisierung"
+            "name": "Letzte synchronisierung"
           },
           "messages": {
             "name": "Benachrichtigungen"
@@ -117,16 +117,16 @@
         "name": "Einstellungen",
         "state_attributes": {
           "email": {
-            "name": "E-Mail"
+            "name": "E-mail"
           },
-          "emailVerified": {
-            "name": "E-Mail verifiziert"
+          "emailverified": {
+            "name": "E-mail verifiziert"
           },
           "last_synced": {
-            "name": "Letzte Synchronisierung"
+            "name": "Letzte synchronisierung"
           },
-          "patronPendingEmail": {
-            "name": "E-Mail wartet auf Genehmigung"
+          "patronpendingemail": {
+            "name": "E-mail wartet auf genehmigung"
           }
         }
       },
@@ -134,7 +134,7 @@
         "name": "Benutzer",
         "state_attributes": {
           "last_synced": {
-            "name": "Letzte Synchronisierung"
+            "name": "Letzte synchronisierung"
           },
           "name": {
             "name": "Name"
@@ -145,35 +145,35 @@
   },
   "options": {
     "abort": {
-      "already_configured": "Das Konto ist bereits konfiguriert"
+      "already_configured": "Das konto ist bereits konfiguriert"
     },
     "error": {
       "cannot_connect": "Verbindung fehlgeschlagen",
-      "invalid_auth": "Ungültige Authentifizierung",
+      "invalid_auth": "Ungültige authentifizierung",
       "service_error": "Dienst nicht verfügbar",
-      "unknown": "Unerwarteter Fehler"
+      "unknown": "Unerwarteter fehler"
     },
     "step": {
       "barcode_pin": {
         "data": {
           "barcode": "Bibliotheksprofil",
-          "pin": "Passwort / PIN-Code"
+          "pin": "Passwort / Pin-code"
         },
-        "description": "Ausführen, wenn Sie Ihre Kontozugangsdaten auf 'Cloud Library' geändert haben",
-        "title": "Aktualisieren Sie Ihre Zugangsdaten"
+        "description": "Ausführen, wenn sie ihre kontozugangsdaten auf 'cloud library' geändert haben",
+        "title": "Aktualisieren sie ihre zugangsdaten"
       },
       "init": {
         "menu_options": {
-          "barcode_pin": "Bibliotheksprofil & Passwort / PIN-Code",
+          "barcode_pin": "Bibliotheksprofil & Passwort / Pin-code",
           "scan_interval": "Aktualisierungsintervall"
         },
-        "title": "Ändern Sie die Optionen"
+        "title": "Ändern sie die optionen"
       },
       "scan_interval": {
         "data": {
           "scan_interval": "Aktualisierungsintervall (min)"
         },
-        "description": "Ändern Sie das Aktualisierungsintervall zum Auffrischen der Sensoren",
+        "description": "Ändern sie das aktualisierungsintervall zum auffrischen der sensoren",
         "title": "Aktualisierungsintervall"
       }
     }
