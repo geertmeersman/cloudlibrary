@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.1.1](https://github.com/geertmeersman/cloudlibrary/tree/v0.1.1) (2023-12-15)
+
+[Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v0.1.0...v0.1.1)
+
+**Merged pull requests:**
+
+- refactor: rename 'Cloud Library' to cloudLibrary [\#9](https://github.com/geertmeersman/cloudlibrary/pull/9) ([geertmeersman](https://github.com/geertmeersman))
+
 ## [v0.1.0](https://github.com/geertmeersman/cloudlibrary/tree/v0.1.0) (2023-12-15)
 
 [Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/190c10535af235c7090507887c60b028ce21e64a...v0.1.0)
