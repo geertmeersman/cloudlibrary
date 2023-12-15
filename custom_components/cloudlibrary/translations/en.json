@@ -1,0 +1,178 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Account is already configured"
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "service_error": "Service unavailable",
+      "unknown": "Unexpected error"
+    },
+    "step": {
+      "connection_init": {
+        "data": {
+          "barcode": "Library profile",
+          "library": "Library ID",
+          "pin": "Password/Pincode",
+          "scan_interval": "Update interval (min)"
+        },
+        "description": "Set up your Cloud Library user account",
+        "title": "New Cloud Library account"
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "current": {
+        "name": "Current",
+        "state_attributes": {
+          "items": {
+            "name": "Items"
+          }
+        }
+      },
+      "email": {
+        "name": "Email",
+        "state_attributes": {
+          "email": {
+            "name": "Email"
+          },
+          "emailverified": {
+            "name": "Email verified"
+          },
+          "last_synced": {
+            "name": "Last synced"
+          },
+          "patronpendingemail": {
+            "name": "Patron pending email"
+          }
+        }
+      },
+      "history": {
+        "name": "History",
+        "state_attributes": {
+          "items": {
+            "name": "Items"
+          }
+        }
+      },
+      "holds": {
+        "name": "Holds",
+        "state_attributes": {
+          "items": {
+            "name": "Items"
+          }
+        }
+      },
+      "library": {
+        "name": "Library",
+        "state_attributes": {
+          "allowrenewals": {
+            "name": "Allow Renewals"
+          },
+          "librarycatalogurl": {
+            "name": "Library Catalog Url"
+          },
+          "maxhelddocuments": {
+            "name": "Max Held Documents"
+          },
+          "maxloantimeunit": {
+            "name": "Max Loan Time Unit"
+          },
+          "maxloantimes": {
+            "name": "Max Loan Times"
+          },
+          "maxloaneddocuments": {
+            "name": "Max Loaned Documents"
+          },
+          "supportemail": {
+            "name": "Support Email"
+          }
+        }
+      },
+      "notifications": {
+        "name": "Notifications",
+        "state_attributes": {
+          "last_synced": {
+            "name": "Last synced"
+          },
+          "messages": {
+            "name": "Notifications"
+          }
+        }
+      },
+      "saved": {
+        "name": "Saved",
+        "state_attributes": {
+          "items": {
+            "name": "Items"
+          }
+        }
+      },
+      "settings": {
+        "name": "Settings",
+        "state_attributes": {
+          "email": {
+            "name": "Email"
+          },
+          "emailverified": {
+            "name": "Email verified"
+          },
+          "last_synced": {
+            "name": "Last synced"
+          },
+          "patronpendingemail": {
+            "name": "Patron pending email"
+          }
+        }
+      },
+      "user": {
+        "name": "User",
+        "state_attributes": {
+          "last_synced": {
+            "name": "Last synced"
+          },
+          "name": {
+            "name": "Name"
+          }
+        }
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "already_configured": "Account is already configured"
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "service_error": "Service unavailable",
+      "unknown": "Unexpected error"
+    },
+    "step": {
+      "barcode_pin": {
+        "data": {
+          "barcode": "Library profile",
+          "pin": "Password/Pincode"
+        },
+        "description": "To do when you changed your account credentials on 'Cloud Library'",
+        "title": "Update your credentials"
+      },
+      "init": {
+        "menu_options": {
+          "barcode_pin": "Library profile & Password/Pincode",
+          "scan_interval": "Update interval"
+        },
+        "title": "Change options"
+      },
+      "scan_interval": {
+        "data": {
+          "scan_interval": "Update interval (min)"
+        },
+        "description": "Change the update interval for refreshing the sensors",
+        "title": "Update interval"
+      }
+    }
+  }
+}

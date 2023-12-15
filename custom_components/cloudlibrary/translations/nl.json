@@ -1,0 +1,178 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Account is al geconfigureerd"
+    },
+    "error": {
+      "cannot_connect": "Verbinding maken is mislukt",
+      "invalid_auth": "Ongeldige authenticatie",
+      "service_error": "Service niet beschikbaar",
+      "unknown": "Onverwachte fout"
+    },
+    "step": {
+      "connection_init": {
+        "data": {
+          "barcode": "Profiel bibliotheek",
+          "library": "Bibliotheek-ID",
+          "pin": "Wachtwoord/Pincode",
+          "scan_interval": "Bijwerkinterval (min)"
+        },
+        "description": "Stel uw gebruikersaccount voor Cloud Library in",
+        "title": "Nieuwe Cloud Library-account"
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "current": {
+        "name": "Huidige",
+        "state_attributes": {
+          "items": {
+            "name": "Items"
+          }
+        }
+      },
+      "email": {
+        "name": "E-mail",
+        "state_attributes": {
+          "email": {
+            "name": "E-mail"
+          },
+          "emailVerified": {
+            "name": "E-mail geverifieerd"
+          },
+          "last_synced": {
+            "name": "Laatst gesynchroniseerd"
+          },
+          "patronPendingEmail": {
+            "name": "Wachtend op goedkeuring e-mail"
+          }
+        }
+      },
+      "history": {
+        "name": "Geschiedenis",
+        "state_attributes": {
+          "items": {
+            "name": "Items"
+          }
+        }
+      },
+      "holds": {
+        "name": "Reserveringen",
+        "state_attributes": {
+          "items": {
+            "name": "Items"
+          }
+        }
+      },
+      "library": {
+        "name": "Bibliotheek",
+        "state_attributes": {
+          "allowRenewals": {
+            "name": "Hernieuwingen toestaan"
+          },
+          "libraryCatalogUrl": {
+            "name": "Bibliotheekcatalogus URL"
+          },
+          "maxHeldDocuments": {
+            "name": "Max. aantal vastgehouden documenten"
+          },
+          "maxLoanTimeUnit": {
+            "name": "Max. uitleentermijn eenheid"
+          },
+          "maxLoanTimes": {
+            "name": "Max. aantal uitleentijden"
+          },
+          "maxLoanedDocuments": {
+            "name": "Max. aantal uitgeleende documenten"
+          },
+          "supportEmail": {
+            "name": "Ondersteunings-e-mail"
+          }
+        }
+      },
+      "notifications": {
+        "name": "Meldingen",
+        "state_attributes": {
+          "last_synced": {
+            "name": "Laatst gesynchroniseerd"
+          },
+          "messages": {
+            "name": "Meldingen"
+          }
+        }
+      },
+      "saved": {
+        "name": "Opgeslagen",
+        "state_attributes": {
+          "items": {
+            "name": "Items"
+          }
+        }
+      },
+      "settings": {
+        "name": "Instellingen",
+        "state_attributes": {
+          "email": {
+            "name": "E-mail"
+          },
+          "emailVerified": {
+            "name": "E-mail geverifieerd"
+          },
+          "last_synced": {
+            "name": "Laatst gesynchroniseerd"
+          },
+          "patronPendingEmail": {
+            "name": "Wachtend op goedkeuring e-mail"
+          }
+        }
+      },
+      "user": {
+        "name": "Gebruiker",
+        "state_attributes": {
+          "last_synced": {
+            "name": "Laatst gesynchroniseerd"
+          },
+          "name": {
+            "name": "Naam"
+          }
+        }
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "already_configured": "Account is al geconfigureerd"
+    },
+    "error": {
+      "cannot_connect": "Verbinding maken is mislukt",
+      "invalid_auth": "Ongeldige authenticatie",
+      "service_error": "Service niet beschikbaar",
+      "unknown": "Onverwachte fout"
+    },
+    "step": {
+      "barcode_pin": {
+        "data": {
+          "barcode": "Profiel bibliotheek",
+          "pin": "Wachtwoord/Pincode"
+        },
+        "description": "Te doen wanneer u uw accountreferenties op 'Cloud Library' heeft gewijzigd",
+        "title": "Werk uw referenties bij"
+      },
+      "init": {
+        "menu_options": {
+          "barcode_pin": "Profiel bibliotheek & Wachtwoord/Pincode",
+          "scan_interval": "Bijwerkinterval"
+        },
+        "title": "Wijzig opties"
+      },
+      "scan_interval": {
+        "data": {
+          "scan_interval": "Bijwerkinterval (min)"
+        },
+        "description": "Wijzig het bijwerkinterval voor het vernieuwen van de sensoren",
+        "title": "Bijwerkinterval"
+      }
+    }
+  }
+}

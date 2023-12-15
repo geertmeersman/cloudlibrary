@@ -1,0 +1,178 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Le compte est déjà configuré"
+    },
+    "error": {
+      "cannot_connect": "Échec de la connexion",
+      "invalid_auth": "Authentification invalide",
+      "service_error": "Service indisponible",
+      "unknown": "Erreur inattendue"
+    },
+    "step": {
+      "connection_init": {
+        "data": {
+          "barcode": "Profil de la bibliothèque",
+          "library": "ID de la bibliothèque",
+          "pin": "Mot de passe / Code PIN",
+          "scan_interval": "Intervalle de mise à jour (min)"
+        },
+        "description": "Configurez votre compte utilisateur Cloud Library",
+        "title": "Nouveau compte Cloud Library"
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "current": {
+        "name": "Actuel",
+        "state_attributes": {
+          "items": {
+            "name": "Articles"
+          }
+        }
+      },
+      "email": {
+        "name": "E-mail",
+        "state_attributes": {
+          "email": {
+            "name": "E-mail"
+          },
+          "emailVerified": {
+            "name": "E-mail vérifié"
+          },
+          "last_synced": {
+            "name": "Dernière synchronisation"
+          },
+          "patronPendingEmail": {
+            "name": "E-mail en attente d'approbation"
+          }
+        }
+      },
+      "history": {
+        "name": "Historique",
+        "state_attributes": {
+          "items": {
+            "name": "Articles"
+          }
+        }
+      },
+      "holds": {
+        "name": "Réservations",
+        "state_attributes": {
+          "items": {
+            "name": "Articles"
+          }
+        }
+      },
+      "library": {
+        "name": "Bibliothèque",
+        "state_attributes": {
+          "allowRenewals": {
+            "name": "Autoriser les renouvellements"
+          },
+          "libraryCatalogUrl": {
+            "name": "URL du catalogue de la bibliothèque"
+          },
+          "maxHeldDocuments": {
+            "name": "Nombre maximal de documents retenus"
+          },
+          "maxLoanTimeUnit": {
+            "name": "Unité de temps de prêt maximal"
+          },
+          "maxLoanTimes": {
+            "name": "Nombre maximal de fois de prêt"
+          },
+          "maxLoanedDocuments": {
+            "name": "Nombre maximal de documents empruntés"
+          },
+          "supportEmail": {
+            "name": "E-mail de support"
+          }
+        }
+      },
+      "notifications": {
+        "name": "Notifications",
+        "state_attributes": {
+          "last_synced": {
+            "name": "Dernière synchronisation"
+          },
+          "messages": {
+            "name": "Notifications"
+          }
+        }
+      },
+      "saved": {
+        "name": "Enregistré",
+        "state_attributes": {
+          "items": {
+            "name": "Articles"
+          }
+        }
+      },
+      "settings": {
+        "name": "Paramètres",
+        "state_attributes": {
+          "email": {
+            "name": "E-mail"
+          },
+          "emailVerified": {
+            "name": "E-mail vérifié"
+          },
+          "last_synced": {
+            "name": "Dernière synchronisation"
+          },
+          "patronPendingEmail": {
+            "name": "E-mail en attente d'approbation"
+          }
+        }
+      },
+      "user": {
+        "name": "Utilisateur",
+        "state_attributes": {
+          "last_synced": {
+            "name": "Dernière synchronisation"
+          },
+          "name": {
+            "name": "Nom"
+          }
+        }
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "already_configured": "Le compte est déjà configuré"
+    },
+    "error": {
+      "cannot_connect": "Échec de la connexion",
+      "invalid_auth": "Authentification invalide",
+      "service_error": "Service indisponible",
+      "unknown": "Erreur inattendue"
+    },
+    "step": {
+      "barcode_pin": {
+        "data": {
+          "barcode": "Profil de la bibliothèque",
+          "pin": "Mot de passe / Code PIN"
+        },
+        "description": "À faire lorsque vous avez modifié vos informations d'identification de compte sur 'Cloud Library'",
+        "title": "Mettre à jour vos informations d'identification"
+      },
+      "init": {
+        "menu_options": {
+          "barcode_pin": "Profil de la bibliothèque & Mot de passe / Code PIN",
+          "scan_interval": "Intervalle de mise à jour"
+        },
+        "title": "Modifier les options"
+      },
+      "scan_interval": {
+        "data": {
+          "scan_interval": "Intervalle de mise à jour (min)"
+        },
+        "description": "Modifier l'intervalle de mise à jour pour actualiser les capteurs",
+        "title": "Intervalle de mise à jour"
+      }
+    }
+  }
+}
