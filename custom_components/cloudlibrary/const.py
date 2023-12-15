@@ -7,7 +7,7 @@ from homeassistant.const import Platform
 
 PLATFORMS: Final = [Platform.SENSOR]
 
-ATTRIBUTION: Final = "Data provided by Cloud Library"
+ATTRIBUTION: Final = "Data provided by cloudLibrary"
 
 DEFAULT_SCAN_INTERVAL = 15
 SCAN_INTERVAL_MIN = 10

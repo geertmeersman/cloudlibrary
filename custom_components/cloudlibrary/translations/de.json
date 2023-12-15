@@ -17,8 +17,8 @@
           "pin": "Passwort / Pin-code",
           "scan_interval": "Aktualisierungsintervall (min)"
         },
-        "description": "Richten sie ihr cloud library benutzerkonto ein",
-        "title": "Neues cloud library-konto"
+        "description": "Richten sie ihr cloudLibrary benutzerkonto ein",
+        "title": "Neues cloudLibrary-konto"
       }
     }
   },
@@ -156,7 +156,7 @@
           "barcode": "Bibliotheksprofil",
           "pin": "Passwort / Pin-code"
         },
-        "description": "Ausführen, wenn sie ihre kontozugangsdaten auf 'cloud library' geändert haben",
+        "description": "Ausführen, wenn sie ihre kontozugangsdaten auf 'cloudLibrary' geändert haben",
         "title": "Aktualisieren sie ihre zugangsdaten"
       },
       "init": {

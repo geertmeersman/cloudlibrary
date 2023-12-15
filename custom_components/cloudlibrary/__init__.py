@@ -113,7 +113,7 @@ class CloudLibraryDataUpdateCoordinator(DataUpdateCoordinator):
         await super().async_config_entry_first_refresh()
 
     async def get_data(self) -> dict | None:
-        """Get the data from the Cloud Library client."""
+        """Get the data from the cloudLibrary client."""
 
         tasks = ["featured", "current", "holds", "saved", "history", "email"]
 

@@ -1,15 +1,15 @@
 <img src="https://github.com/geertmeersman/cloudlibrary/raw/main/images/brand/logo.png"
-     alt="Cloud Library"
+     alt="cloudLibrary"
      align="right"
      style="width: 200px;margin-right: 10px;" />
 
-# Cloud Library for Home Assistant
+# cloudLibrary for Home Assistant
 
-A Home Assistant integration to monitor Cloud Library
+A Home Assistant integration to monitor cloudLibrary
 
 ## Features
 
-Cloud Library sensors for
+cloudLibrary sensors for
 
 - current(): Fetches the current patron items.
 - history(): Retrieves the patron's borrowing history.
@@ -52,7 +52,7 @@ Cloud Library sensors for
 
 ## Table of contents
 
-- [Cloud Library for Home Assistant](#cloud-library-for-home-assistant)
+- [cloudLibrary for Home Assistant](#cloudlibrary-for-home-assistant)
   - [Features](#features)
   - [Table of contents](#table-of-contents)
   - [Installation](#installation)
@@ -76,31 +76,31 @@ Cloud Library sensors for
 
 **or follow these steps:**
 
-1. Simply search for `Cloud Library` in HACS and install it easily.
+1. Simply search for `cloudLibrary` in HACS and install it easily.
 2. Restart Home Assistant
-3. Add the 'Cloud Library' integration via HA Settings > 'Devices and Services' > 'Integrations'
+3. Add the 'cloudLibrary' integration via HA Settings > 'Devices and Services' > 'Integrations'
 4. Provide your Robonect account details
 
 ### Manual
 
 1. Copy the `custom_components/cloudlibrary` directory of this repository as `config/custom_components/cloudlibrary` in your Home Assistant instalation.
 2. Restart Home Assistant
-3. Add the 'Cloud Library' integration via HA Settings > 'Devices and Services' > 'Integrations'
-4. Provide your Cloud Library account details
+3. Add the 'cloudLibrary' integration via HA Settings > 'Devices and Services' > 'Integrations'
+4. Provide your cloudLibrary account details
 
 This integration will set up the following platforms.
 
-| Platform       | Description                                |
-| -------------- | ------------------------------------------ |
-| `cloudlibrary` | Home Assistant component for Cloud Library |
+| Platform       | Description                               |
+| -------------- | ----------------------------------------- |
+| `cloudlibrary` | Home Assistant component for cloudLibrary |
 
 ## Configuration
 
 The integration needs 3 inputs:
 
-- barcode: Your Cloud Library login
-- pin: Your Cloud Library password
-- library id: Your Cloud Library ID (this you can fetch from the url when you connect to the website: https://ebook.yourcloudlibrary.com/library/< HERE YOU FIND THE LIBRARY ID >/mybooks/current)
+- barcode: Your cloudLibrary login
+- pin: Your cloudLibrary password
+- library id: Your cloudLibrary ID (this you can fetch from the url when you connect to the website: https://ebook.yourcloudlibrary.com/library/< HERE YOU FIND THE LIBRARY ID >/mybooks/current)
 
 ## Contributions are welcome!
 
@@ -110,7 +110,7 @@ If you want to contribute to this please read the [Contribution guidelines](CONT
 
 ### Enable debug logging
 
-To enable debug logging, go to Settings -> Devices & Services and then click the triple dots for the Cloud Library integration and click Enable Debug Logging.
+To enable debug logging, go to Settings -> Devices & Services and then click the triple dots for the cloudLibrary integration and click Enable Debug Logging.
 
 ![enable-debug-logging](https://raw.githubusercontent.com/geertmeersman/cloudlibrary/main/images/screenshots/enable-debug-logging.gif)
 

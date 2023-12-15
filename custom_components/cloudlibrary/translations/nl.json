@@ -17,8 +17,8 @@
           "pin": "Wachtwoord/Pincode",
           "scan_interval": "Bijwerkinterval (min)"
         },
-        "description": "Stel uw gebruikersaccount voor Cloud Library in",
-        "title": "Nieuwe Cloud Library-account"
+        "description": "Stel uw gebruikersaccount voor cloudLibrary in",
+        "title": "Nieuwe cloudLibrary-account"
       }
     }
   },
@@ -156,7 +156,7 @@
           "barcode": "Profiel bibliotheek",
           "pin": "Wachtwoord/Pincode"
         },
-        "description": "Te doen wanneer u uw accountreferenties op 'Cloud Library' heeft gewijzigd",
+        "description": "Te doen wanneer u uw accountreferenties op 'cloudLibrary' heeft gewijzigd",
         "title": "Werk uw referenties bij"
       },
       "init": {
