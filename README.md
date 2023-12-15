@@ -100,7 +100,7 @@ The integration needs 3 inputs:
 
 - barcode: Your Cloud Library login
 - pin: Your Cloud Library password
-- library id: Your Cloud Library ID (this you can fetch from the url when you connect to the website: https://ebook.yourcloudlibrary.com/library/&lt;HERE YOU FIND THE LIBRARY ID&gt;/mybooks/current)
+- library id: Your Cloud Library ID (this you can fetch from the url when you connect to the website: https://ebook.yourcloudlibrary.com/library/< HERE YOU FIND THE LIBRARY ID >/mybooks/current)
 
 ## Contributions are welcome!
 
