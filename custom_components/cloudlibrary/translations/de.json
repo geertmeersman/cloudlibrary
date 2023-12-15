@@ -10,9 +10,6 @@
       "unknown": "Unerwarteter fehler"
     },
     "step": {
-      "abort": {
-        "already_configured": "Das konto ist bereits konfiguriert"
-      },
       "connection_init": {
         "data": {
           "barcode": "Bibliotheksprofil",

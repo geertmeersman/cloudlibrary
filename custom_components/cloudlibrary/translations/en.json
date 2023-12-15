@@ -10,9 +10,6 @@
       "unknown": "Unexpected error"
     },
     "step": {
-      "abort": {
-        "already_configured": "Account is already configured"
-      },
       "connection_init": {
         "data": {
           "barcode": "Library profile",

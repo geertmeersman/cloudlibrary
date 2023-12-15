@@ -10,9 +10,6 @@
       "unknown": "Onverwachte fout"
     },
     "step": {
-      "abort": {
-        "already_configured": "Account is al geconfigureerd"
-      },
       "connection_init": {
         "data": {
           "barcode": "Profiel bibliotheek",
