@@ -27,7 +27,7 @@
       "current": {
         "name": "Huidige",
         "state_attributes": {
-          "items": {
+          "patron_items": {
             "name": "Items"
           }
         }
@@ -52,7 +52,7 @@
       "history": {
         "name": "Geschiedenis",
         "state_attributes": {
-          "items": {
+          "patron_items": {
             "name": "Items"
           }
         }
@@ -60,7 +60,7 @@
       "holds": {
         "name": "Reserveringen",
         "state_attributes": {
-          "items": {
+          "patron_items": {
             "name": "Items"
           }
         }
@@ -105,7 +105,7 @@
       "saved": {
         "name": "Opgeslagen",
         "state_attributes": {
-          "items": {
+          "patron_items": {
             "name": "Items"
           }
         }

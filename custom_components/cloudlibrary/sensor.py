@@ -136,7 +136,7 @@ SENSOR_TYPES: tuple[CloudLibrarySensorDescription, ...] = (
         available_fn=lambda data: data.get("patronItems") is not None,
         value_fn=lambda data: len(data.get("patronItems", [])),
         attributes_fn=lambda data: {
-            "items": [
+            "patron_items": [
                 {key: item.get(key) for key in PATRON_ITEM_KEYS}
                 for item in data.get("patronItems", [])
             ]
@@ -150,7 +150,7 @@ SENSOR_TYPES: tuple[CloudLibrarySensorDescription, ...] = (
         available_fn=lambda data: data.get("patronItems") is not None,
         value_fn=lambda data: len(data.get("patronItems", [])),
         attributes_fn=lambda data: {
-            "items": [
+            "patron_items": [
                 {key: item.get(key) for key in PATRON_ITEM_KEYS}
                 for item in data.get("patronItems", [])
             ]
@@ -164,7 +164,7 @@ SENSOR_TYPES: tuple[CloudLibrarySensorDescription, ...] = (
         available_fn=lambda data: data.get("patronItems") is not None,
         value_fn=lambda data: len(data.get("patronItems", [])),
         attributes_fn=lambda data: {
-            "items": [
+            "patron_items": [
                 {key: item.get(key) for key in PATRON_ITEM_KEYS}
                 for item in data.get("patronItems", [])
             ]
@@ -178,7 +178,7 @@ SENSOR_TYPES: tuple[CloudLibrarySensorDescription, ...] = (
         available_fn=lambda data: data.get("patronItems") is not None,
         value_fn=lambda data: len(data.get("patronItems", [])),
         attributes_fn=lambda data: {
-            "items": [
+            "patron_items": [
                 {key: item.get(key) for key in PATRON_ITEM_KEYS}
                 for item in data.get("patronItems", [])
             ]

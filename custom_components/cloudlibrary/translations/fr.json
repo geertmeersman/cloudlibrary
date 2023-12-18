@@ -27,7 +27,7 @@
       "current": {
         "name": "Actuel",
         "state_attributes": {
-          "items": {
+          "patron_items": {
             "name": "Articles"
           }
         }
@@ -52,7 +52,7 @@
       "history": {
         "name": "Historique",
         "state_attributes": {
-          "items": {
+          "patron_items": {
             "name": "Articles"
           }
         }
@@ -60,7 +60,7 @@
       "holds": {
         "name": "Réservations",
         "state_attributes": {
-          "items": {
+          "patron_items": {
             "name": "Articles"
           }
         }
@@ -105,7 +105,7 @@
       "saved": {
         "name": "Enregistré",
         "state_attributes": {
-          "items": {
+          "patron_items": {
             "name": "Articles"
           }
         }
