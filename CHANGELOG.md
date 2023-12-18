@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.1.2](https://github.com/geertmeersman/cloudlibrary/tree/v0.1.2) (2023-12-18)
+
+[Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v0.1.1...v0.1.2)
+
+**Merged pull requests:**
+
+- fix: rename items attribute to patron\_items [\#10](https://github.com/geertmeersman/cloudlibrary/pull/10) ([geertmeersman](https://github.com/geertmeersman))
+
 ## [v0.1.1](https://github.com/geertmeersman/cloudlibrary/tree/v0.1.1) (2023-12-15)
 
 [Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v0.1.0...v0.1.1)
