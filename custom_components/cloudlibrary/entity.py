@@ -21,7 +21,7 @@ class CloudLibraryEntity(CoordinatorEntity[CloudLibraryDataUpdateCoordinator]):
     _attr_attribution = ATTRIBUTION
     _unrecorded_attributes = frozenset(
         {
-            "items",
+            "patron_items",
             "messages",
             "last_synced",
         }
