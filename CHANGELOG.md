@@ -1,5 +1,16 @@
 # Changelog
 
+## [v0.1.3](https://github.com/geertmeersman/cloudlibrary/tree/v0.1.3) (2024-01-08)
+
+[Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v0.1.2...v0.1.3)
+
+**Merged pull requests:**
+
+- fix: database performance ignore patron\_items [\#14](https://github.com/geertmeersman/cloudlibrary/pull/14) ([geertmeersman](https://github.com/geertmeersman))
+- build\(deps\): bump ruff from 0.1.9 to 0.1.11 [\#13](https://github.com/geertmeersman/cloudlibrary/pull/13) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.1.8 to 0.1.9 [\#12](https://github.com/geertmeersman/cloudlibrary/pull/12) ([dependabot[bot]](https://github.com/apps/dependabot))
+- fix: remove requirements [\#11](https://github.com/geertmeersman/cloudlibrary/pull/11) ([geertmeersman](https://github.com/geertmeersman))
+
 ## [v0.1.2](https://github.com/geertmeersman/cloudlibrary/tree/v0.1.2) (2023-12-18)
 
 [Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v0.1.1...v0.1.2)
