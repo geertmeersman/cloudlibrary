@@ -64,7 +64,6 @@ cloudLibrary sensors for
     - [Enable debug logging](#enable-debug-logging)
     - [Disable debug logging and download logs](#disable-debug-logging-and-download-logs)
   - [Lovelace examples](#lovelace-examples)
-  - [Screenshots](#screenshots)
 
 ## Installation
 
@@ -122,4 +121,43 @@ Once you enable debug logging, you ideally need to make the error happen. Run yo
 
 ## Lovelace examples
 
-## Screenshots
+![current-books](https://raw.githubusercontent.com/geertmeersman/cloudlibrary/main/images/screenshots/current_books.png)
+
+<details><summary>Show markdown code</summary>
+
+```yaml
+type: markdown
+title: Current books
+content: >-
+  <table> {% for item in
+  states.sensor.cloudlibrary_current.attributes.patron_items -%}
+      <tr>
+          <td width="140">
+              <img height="180px" alt="{{ item.title }}" src="{{ item.imageLink }}">
+          </td>
+          <td valign="top">
+              <strong>{{ item.title }}</strong><br>
+              {% for author in item.contributors -%}
+                  {% if 'name' in author -%}
+                      <u>{{ author.name }}</u>&nbsp;
+                  {% endif -%}
+              {% endfor -%}
+              <br><br>
+              {% if item.borrowedDate != None -%}
+                  Borrowed on <strong>{{ item.borrowedDate }}</strong><br>
+              {% endif -%}
+              {% if item.returnedDate != None -%}
+                  Returned on <strong>{{ item.returnedDate }}</strong><br>
+              {% endif -%}
+              {% if item.dueDate != None -%}
+                  Due on <strong>{{ item.dueDate }}</strong><br>
+              {% endif -%}
+              {% if item.holdAvailableDate != None -%}
+                  Available on <strong>{{ item.holdAvailableDate }}</strong><br>
+              {% endif -%}
+          </td>
+      </tr>
+  {% endfor %} </table>
+```
+
+</details>
