@@ -1,5 +1,49 @@
 # Changelog
 
+## [v0.2.0](https://github.com/geertmeersman/cloudlibrary/tree/v0.2.0) (2024-08-23)
+
+[Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v0.1.3...v0.2.0)
+
+**Closed issues:**
+
+- Request to https://ebook.yourcloudlibrary.com/?\_data=root failed with status code 204 [\#50](https://github.com/geertmeersman/cloudlibrary/issues/50)
+
+**Merged pull requests:**
+
+- build\(deps\): bump ruff from 0.6.1 to 0.6.2 [\#55](https://github.com/geertmeersman/cloudlibrary/pull/55) ([dependabot[bot]](https://github.com/apps/dependabot))
+- fix: cookie fetching on login modified, fixes \#50 [\#54](https://github.com/geertmeersman/cloudlibrary/pull/54) ([geertmeersman](https://github.com/geertmeersman))
+- build\(deps\): bump ruff from 0.5.1 to 0.6.1 [\#53](https://github.com/geertmeersman/cloudlibrary/pull/53) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): update pip requirement from \<24.2,\>=8.0.3 to \>=8.0.3,\<24.3 [\#49](https://github.com/geertmeersman/cloudlibrary/pull/49) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.5.0 to 0.5.1 [\#45](https://github.com/geertmeersman/cloudlibrary/pull/45) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.4.10 to 0.5.0 [\#44](https://github.com/geertmeersman/cloudlibrary/pull/44) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): update pip requirement from \<24.1,\>=8.0.3 to \>=8.0.3,\<24.2 [\#43](https://github.com/geertmeersman/cloudlibrary/pull/43) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.4.9 to 0.4.10 [\#42](https://github.com/geertmeersman/cloudlibrary/pull/42) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.4.8 to 0.4.9 [\#41](https://github.com/geertmeersman/cloudlibrary/pull/41) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.4.7 to 0.4.8 [\#40](https://github.com/geertmeersman/cloudlibrary/pull/40) ([dependabot[bot]](https://github.com/apps/dependabot))
+- docs: lovelace example [\#39](https://github.com/geertmeersman/cloudlibrary/pull/39) ([geertmeersman](https://github.com/geertmeersman))
+- build\(deps\): bump ruff from 0.4.5 to 0.4.7 [\#38](https://github.com/geertmeersman/cloudlibrary/pull/38) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.4.4 to 0.4.5 [\#37](https://github.com/geertmeersman/cloudlibrary/pull/37) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.4.3 to 0.4.4 [\#36](https://github.com/geertmeersman/cloudlibrary/pull/36) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.4.2 to 0.4.3 [\#35](https://github.com/geertmeersman/cloudlibrary/pull/35) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.4.1 to 0.4.2 [\#34](https://github.com/geertmeersman/cloudlibrary/pull/34) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.3.7 to 0.4.1 [\#33](https://github.com/geertmeersman/cloudlibrary/pull/33) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.3.4 to 0.3.7 [\#32](https://github.com/geertmeersman/cloudlibrary/pull/32) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.3.3 to 0.3.4 [\#30](https://github.com/geertmeersman/cloudlibrary/pull/30) ([dependabot[bot]](https://github.com/apps/dependabot))
+- refactor: improve github workflows [\#29](https://github.com/geertmeersman/cloudlibrary/pull/29) ([geertmeersman](https://github.com/geertmeersman))
+- build\(deps\): bump ruff from 0.3.2 to 0.3.3 [\#28](https://github.com/geertmeersman/cloudlibrary/pull/28) ([dependabot[bot]](https://github.com/apps/dependabot))
+- docs: bug\_report markdown [\#27](https://github.com/geertmeersman/cloudlibrary/pull/27) ([geertmeersman](https://github.com/geertmeersman))
+- build\(deps\): bump ruff from 0.3.0 to 0.3.2 [\#26](https://github.com/geertmeersman/cloudlibrary/pull/26) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.2.1 to 0.3.0 [\#25](https://github.com/geertmeersman/cloudlibrary/pull/25) ([dependabot[bot]](https://github.com/apps/dependabot))
+- refactor: lint [\#23](https://github.com/geertmeersman/cloudlibrary/pull/23) ([geertmeersman](https://github.com/geertmeersman))
+- build\(deps\): bump ruff from 0.2.0 to 0.2.1 [\#22](https://github.com/geertmeersman/cloudlibrary/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.1.14 to 0.2.0 [\#21](https://github.com/geertmeersman/cloudlibrary/pull/21) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): update pip requirement from \<23.4,\>=8.0.3 to \>=8.0.3,\<24.1 [\#20](https://github.com/geertmeersman/cloudlibrary/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump release-drafter/release-drafter from 5 to 6 [\#19](https://github.com/geertmeersman/cloudlibrary/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump colorlog from 6.8.0 to 6.8.2 [\#18](https://github.com/geertmeersman/cloudlibrary/pull/18) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.1.13 to 0.1.14 [\#17](https://github.com/geertmeersman/cloudlibrary/pull/17) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump actions/dependency-review-action from 3 to 4 [\#16](https://github.com/geertmeersman/cloudlibrary/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.1.11 to 0.1.13 [\#15](https://github.com/geertmeersman/cloudlibrary/pull/15) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.1.3](https://github.com/geertmeersman/cloudlibrary/tree/v0.1.3) (2024-01-08)
 
 [Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v0.1.2...v0.1.3)
