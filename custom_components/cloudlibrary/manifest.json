@@ -8,6 +8,6 @@
   "integration_type": "hub",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/geertmeersman/cloudlibrary/issues",
-  "requirements": ["aiocloudlibrary>=0.1.0"],
+  "requirements": ["aiocloudlibrary>=0.2.0"],
   "version": "v0.1.3"
 }
