@@ -1,0 +1,178 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "A conta já está configurada"
+    },
+    "error": {
+      "cannot_connect": "Falha ao conectar",
+      "invalid_auth": "Autenticação inválida",
+      "service_error": "Serviço indisponível",
+      "unknown": "Erro inesperado"
+    },
+    "step": {
+      "connection_init": {
+        "data": {
+          "barcode": "Perfil da biblioteca",
+          "library": "ID da biblioteca",
+          "pin": "Palavra-passe/PIN",
+          "scan_interval": "Intervalo de atualização (min)"
+        },
+        "description": "Configure a sua conta de utilizador cloudLibrary",
+        "title": "Nova conta cloudLibrary"
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "current": {
+        "name": "Atual",
+        "state_attributes": {
+          "patron_items": {
+            "name": "Itens"
+          }
+        }
+      },
+      "email": {
+        "name": "E-mail",
+        "state_attributes": {
+          "email": {
+            "name": "E-mail"
+          },
+          "emailverified": {
+            "name": "E-mail verificado"
+          },
+          "last_synced": {
+            "name": "Última sincronização"
+          },
+          "patronpendingemail": {
+            "name": "E-mail pendente do utilizador"
+          }
+        }
+      },
+      "history": {
+        "name": "Histórico",
+        "state_attributes": {
+          "patron_items": {
+            "name": "Itens"
+          }
+        }
+      },
+      "holds": {
+        "name": "Reservas",
+        "state_attributes": {
+          "patron_items": {
+            "name": "Itens"
+          }
+        }
+      },
+      "library": {
+        "name": "Biblioteca",
+        "state_attributes": {
+          "allowrenewals": {
+            "name": "Permitir renovações"
+          },
+          "librarycatalogurl": {
+            "name": "URL do Catálogo da Biblioteca"
+          },
+          "maxhelddocuments": {
+            "name": "Máximo de documentos em reserva"
+          },
+          "maxloantimeunit": {
+            "name": "Unidade de tempo máxima de empréstimo"
+          },
+          "maxloantimes": {
+            "name": "Número máximo de empréstimos"
+          },
+          "maxloaneddocuments": {
+            "name": "Máximo de documentos emprestados"
+          },
+          "supportemail": {
+            "name": "E-mail de suporte"
+          }
+        }
+      },
+      "notifications": {
+        "name": "Notificações",
+        "state_attributes": {
+          "last_synced": {
+            "name": "Última sincronização"
+          },
+          "messages": {
+            "name": "Notificações"
+          }
+        }
+      },
+      "saved": {
+        "name": "Guardado",
+        "state_attributes": {
+          "patron_items": {
+            "name": "Itens"
+          }
+        }
+      },
+      "settings": {
+        "name": "Definições",
+        "state_attributes": {
+          "email": {
+            "name": "E-mail"
+          },
+          "emailverified": {
+            "name": "E-mail verificado"
+          },
+          "last_synced": {
+            "name": "Última sincronização"
+          },
+          "patronpendingemail": {
+            "name": "E-mail pendente do utilizador"
+          }
+        }
+      },
+      "user": {
+        "name": "Utilizador",
+        "state_attributes": {
+          "last_synced": {
+            "name": "Última sincronização"
+          },
+          "name": {
+            "name": "Nome"
+          }
+        }
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "already_configured": "A conta já está configurada"
+    },
+    "error": {
+      "cannot_connect": "Falha ao conectar",
+      "invalid_auth": "Autenticação inválida",
+      "service_error": "Serviço indisponível",
+      "unknown": "Erro inesperado"
+    },
+    "step": {
+      "barcode_pin": {
+        "data": {
+          "barcode": "Perfil da biblioteca",
+          "pin": "Palavra-passe/PIN"
+        },
+        "description": "Para quando alterar as suas credenciais na 'cloudLibrary'",
+        "title": "Atualize as suas credenciais"
+      },
+      "init": {
+        "menu_options": {
+          "barcode_pin": "Perfil da biblioteca & Palavra-passe/PIN",
+          "scan_interval": "Intervalo de atualização"
+        },
+        "title": "Alterar opções"
+      },
+      "scan_interval": {
+        "data": {
+          "scan_interval": "Intervalo de atualização (min)"
+        },
+        "description": "Altere o intervalo de atualização para atualizar os sensores",
+        "title": "Intervalo de atualização"
+      }
+    }
+  }
+}
