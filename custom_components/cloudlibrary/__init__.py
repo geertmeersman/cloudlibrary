@@ -82,8 +82,13 @@ async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
 
             storage_dir = Path(f"{hass.config.path(STORAGE_DIR)}/{DOMAIN}")
             # If the directory exists and is empty, remove it
-            if storage_dir.is_dir() and not any(storage_dir.iterdir()):
-                storage_dir.rmdir()
+            # If the directory exists and is empty, remove it
+            if storage_dir.is_dir():
+                try:
+                    if not any(storage_dir.iterdir()):
+                        storage_dir.rmdir()
+                except Exception as e:
+                    _LOGGER.warning(f"Could not remove directory {storage_dir}: {e}")
 
         # Offload the file system operations to a thread
         await asyncio.to_thread(remove_storage_files)
