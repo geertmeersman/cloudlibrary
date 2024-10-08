@@ -1,5 +1,19 @@
 # Changelog
 
+## [v0.2.1](https://github.com/geertmeersman/cloudlibrary/tree/v0.2.1) (2024-10-08)
+
+[Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v0.2.0...v0.2.1)
+
+**Merged pull requests:**
+
+- fix: async for blocking file system operations [\#63](https://github.com/geertmeersman/cloudlibrary/pull/63) ([geertmeersman](https://github.com/geertmeersman))
+- build\(deps\): bump ruff from 0.6.8 to 0.6.9 [\#62](https://github.com/geertmeersman/cloudlibrary/pull/62) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Create pt.json [\#61](https://github.com/geertmeersman/cloudlibrary/pull/61) ([ViPeR5000](https://github.com/ViPeR5000))
+- build\(deps\): bump ruff from 0.6.7 to 0.6.8 [\#60](https://github.com/geertmeersman/cloudlibrary/pull/60) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.6.5 to 0.6.7 [\#59](https://github.com/geertmeersman/cloudlibrary/pull/59) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.6.4 to 0.6.5 [\#58](https://github.com/geertmeersman/cloudlibrary/pull/58) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.6.2 to 0.6.4 [\#57](https://github.com/geertmeersman/cloudlibrary/pull/57) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.2.0](https://github.com/geertmeersman/cloudlibrary/tree/v0.2.0) (2024-08-23)
 
 [Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v0.1.3...v0.2.0)
