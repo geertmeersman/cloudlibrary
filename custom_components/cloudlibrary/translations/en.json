@@ -77,14 +77,14 @@
           "maxhelddocuments": {
             "name": "Max Held Documents"
           },
-          "maxloantimeunit": {
-            "name": "Max Loan Time Unit"
+          "maxloaneddocuments": {
+            "name": "Max Loaned Documents"
           },
           "maxloantimes": {
             "name": "Max Loan Times"
           },
-          "maxloaneddocuments": {
-            "name": "Max Loaned Documents"
+          "maxloantimeunit": {
+            "name": "Max Loan Time Unit"
           },
           "supportemail": {
             "name": "Support Email"
