@@ -1,10 +1,10 @@
 {
   "config": {
     "abort": {
-      "already_configured": "Le compte est déjà configuré"
+      "already_configured": "Le compte est d\u00e9j\u00e0 configur\u00e9"
     },
     "error": {
-      "cannot_connect": "Échec de la connexion",
+      "cannot_connect": "\u00c9chec de la connexion",
       "invalid_auth": "Authentification invalide",
       "service_error": "Service indisponible",
       "unknown": "Erreur inattendue"
@@ -12,10 +12,10 @@
     "step": {
       "connection_init": {
         "data": {
-          "barcode": "Profil de la bibliothèque",
-          "library": "ID de la bibliothèque",
+          "barcode": "Profil de la biblioth\u00e8que",
+          "library": "ID de la biblioth\u00e8que",
           "pin": "Mot de passe / Code PIN",
-          "scan_interval": "Intervalle de mise à jour (min)"
+          "scan_interval": "Intervalle de mise \u00e0 jour (min)"
         },
         "description": "Configurez votre compte utilisateur cloudLibrary",
         "title": "Nouveau compte cloudLibrary"
@@ -39,10 +39,10 @@
             "name": "E-mail"
           },
           "emailVerified": {
-            "name": "E-mail vérifié"
+            "name": "E-mail v\u00e9rifi\u00e9"
           },
           "last_synced": {
-            "name": "Dernière synchronisation"
+            "name": "Derni\u00e8re synchronisation"
           },
           "patronPendingEmail": {
             "name": "E-mail en attente d'approbation"
@@ -58,7 +58,7 @@
         }
       },
       "holds": {
-        "name": "Réservations",
+        "name": "R\u00e9servations",
         "state_attributes": {
           "patron_items": {
             "name": "Articles"
@@ -66,25 +66,25 @@
         }
       },
       "library": {
-        "name": "Bibliothèque",
+        "name": "Biblioth\u00e8que",
         "state_attributes": {
           "allowRenewals": {
             "name": "Autoriser les renouvellements"
           },
           "libraryCatalogUrl": {
-            "name": "URL du catalogue de la bibliothèque"
+            "name": "URL du catalogue de la biblioth\u00e8que"
           },
           "maxHeldDocuments": {
             "name": "Nombre maximal de documents retenus"
           },
           "maxLoanTimeUnit": {
-            "name": "Unité de temps de prêt maximal"
+            "name": "Unit\u00e9 de temps de pr\u00eat maximal"
           },
           "maxLoanTimes": {
-            "name": "Nombre maximal de fois de prêt"
+            "name": "Nombre maximal de fois de pr\u00eat"
           },
           "maxLoanedDocuments": {
-            "name": "Nombre maximal de documents empruntés"
+            "name": "Nombre maximal de documents emprunt\u00e9s"
           },
           "supportEmail": {
             "name": "E-mail de support"
@@ -95,7 +95,7 @@
         "name": "Notifications",
         "state_attributes": {
           "last_synced": {
-            "name": "Dernière synchronisation"
+            "name": "Derni\u00e8re synchronisation"
           },
           "messages": {
             "name": "Notifications"
@@ -103,7 +103,7 @@
         }
       },
       "saved": {
-        "name": "Enregistré",
+        "name": "Enregistr\u00e9",
         "state_attributes": {
           "patron_items": {
             "name": "Articles"
@@ -111,16 +111,16 @@
         }
       },
       "settings": {
-        "name": "Paramètres",
+        "name": "Param\u00e8tres",
         "state_attributes": {
           "email": {
             "name": "E-mail"
           },
           "emailVerified": {
-            "name": "E-mail vérifié"
+            "name": "E-mail v\u00e9rifi\u00e9"
           },
           "last_synced": {
-            "name": "Dernière synchronisation"
+            "name": "Derni\u00e8re synchronisation"
           },
           "patronPendingEmail": {
             "name": "E-mail en attente d'approbation"
@@ -131,7 +131,7 @@
         "name": "Utilisateur",
         "state_attributes": {
           "last_synced": {
-            "name": "Dernière synchronisation"
+            "name": "Derni\u00e8re synchronisation"
           },
           "name": {
             "name": "Nom"
@@ -142,10 +142,10 @@
   },
   "options": {
     "abort": {
-      "already_configured": "Le compte est déjà configuré"
+      "already_configured": "Le compte est d\u00e9j\u00e0 configur\u00e9"
     },
     "error": {
-      "cannot_connect": "Échec de la connexion",
+      "cannot_connect": "\u00c9chec de la connexion",
       "invalid_auth": "Authentification invalide",
       "service_error": "Service indisponible",
       "unknown": "Erreur inattendue"
@@ -153,25 +153,25 @@
     "step": {
       "barcode_pin": {
         "data": {
-          "barcode": "Profil de la bibliothèque",
+          "barcode": "Profil de la biblioth\u00e8que",
           "pin": "Mot de passe / Code PIN"
         },
-        "description": "À faire lorsque vous avez modifié vos informations d'identification de compte sur 'cloudLibrary'",
-        "title": "Mettre à jour vos informations d'identification"
+        "description": "\u00c0 faire lorsque vous avez modifi\u00e9 vos informations d'identification de compte sur 'cloudLibrary'",
+        "title": "Mettre \u00e0 jour vos informations d'identification"
       },
       "init": {
         "menu_options": {
-          "barcode_pin": "Profil de la bibliothèque & Mot de passe / Code PIN",
-          "scan_interval": "Intervalle de mise à jour"
+          "barcode_pin": "Profil de la biblioth\u00e8que & Mot de passe / Code PIN",
+          "scan_interval": "Intervalle de mise \u00e0 jour"
         },
         "title": "Modifier les options"
       },
       "scan_interval": {
         "data": {
-          "scan_interval": "Intervalle de mise à jour (min)"
+          "scan_interval": "Intervalle de mise \u00e0 jour (min)"
         },
-        "description": "Modifier l'intervalle de mise à jour pour actualiser les capteurs",
-        "title": "Intervalle de mise à jour"
+        "description": "Modifier l'intervalle de mise \u00e0 jour pour actualiser les capteurs",
+        "title": "Intervalle de mise \u00e0 jour"
       }
     }
   }

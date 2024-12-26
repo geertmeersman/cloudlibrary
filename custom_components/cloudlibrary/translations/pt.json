@@ -1,12 +1,12 @@
 {
   "config": {
     "abort": {
-      "already_configured": "A conta já está configurada"
+      "already_configured": "A conta j\u00e1 est\u00e1 configurada"
     },
     "error": {
       "cannot_connect": "Falha ao conectar",
-      "invalid_auth": "Autenticação inválida",
-      "service_error": "Serviço indisponível",
+      "invalid_auth": "Autentica\u00e7\u00e3o inv\u00e1lida",
+      "service_error": "Servi\u00e7o indispon\u00edvel",
       "unknown": "Erro inesperado"
     },
     "step": {
@@ -15,7 +15,7 @@
           "barcode": "Perfil da biblioteca",
           "library": "ID da biblioteca",
           "pin": "Palavra-passe/PIN",
-          "scan_interval": "Intervalo de atualização (min)"
+          "scan_interval": "Intervalo de atualiza\u00e7\u00e3o (min)"
         },
         "description": "Configure a sua conta de utilizador cloudLibrary",
         "title": "Nova conta cloudLibrary"
@@ -42,7 +42,7 @@
             "name": "E-mail verificado"
           },
           "last_synced": {
-            "name": "Última sincronização"
+            "name": "\u00daltima sincroniza\u00e7\u00e3o"
           },
           "patronpendingemail": {
             "name": "E-mail pendente do utilizador"
@@ -50,7 +50,7 @@
         }
       },
       "history": {
-        "name": "Histórico",
+        "name": "Hist\u00f3rico",
         "state_attributes": {
           "patron_items": {
             "name": "Itens"
@@ -69,22 +69,22 @@
         "name": "Biblioteca",
         "state_attributes": {
           "allowrenewals": {
-            "name": "Permitir renovações"
+            "name": "Permitir renova\u00e7\u00f5es"
           },
           "librarycatalogurl": {
-            "name": "URL do Catálogo da Biblioteca"
+            "name": "URL do Cat\u00e1logo da Biblioteca"
           },
           "maxhelddocuments": {
-            "name": "Máximo de documentos em reserva"
-          },
-          "maxloantimeunit": {
-            "name": "Unidade de tempo máxima de empréstimo"
-          },
-          "maxloantimes": {
-            "name": "Número máximo de empréstimos"
+            "name": "M\u00e1ximo de documentos em reserva"
           },
           "maxloaneddocuments": {
-            "name": "Máximo de documentos emprestados"
+            "name": "M\u00e1ximo de documentos emprestados"
+          },
+          "maxloantimes": {
+            "name": "N\u00famero m\u00e1ximo de empr\u00e9stimos"
+          },
+          "maxloantimeunit": {
+            "name": "Unidade de tempo m\u00e1xima de empr\u00e9stimo"
           },
           "supportemail": {
             "name": "E-mail de suporte"
@@ -92,13 +92,13 @@
         }
       },
       "notifications": {
-        "name": "Notificações",
+        "name": "Notifica\u00e7\u00f5es",
         "state_attributes": {
           "last_synced": {
-            "name": "Última sincronização"
+            "name": "\u00daltima sincroniza\u00e7\u00e3o"
           },
           "messages": {
-            "name": "Notificações"
+            "name": "Notifica\u00e7\u00f5es"
           }
         }
       },
@@ -111,7 +111,7 @@
         }
       },
       "settings": {
-        "name": "Definições",
+        "name": "Defini\u00e7\u00f5es",
         "state_attributes": {
           "email": {
             "name": "E-mail"
@@ -120,7 +120,7 @@
             "name": "E-mail verificado"
           },
           "last_synced": {
-            "name": "Última sincronização"
+            "name": "\u00daltima sincroniza\u00e7\u00e3o"
           },
           "patronpendingemail": {
             "name": "E-mail pendente do utilizador"
@@ -131,7 +131,7 @@
         "name": "Utilizador",
         "state_attributes": {
           "last_synced": {
-            "name": "Última sincronização"
+            "name": "\u00daltima sincroniza\u00e7\u00e3o"
           },
           "name": {
             "name": "Nome"
@@ -142,12 +142,12 @@
   },
   "options": {
     "abort": {
-      "already_configured": "A conta já está configurada"
+      "already_configured": "A conta j\u00e1 est\u00e1 configurada"
     },
     "error": {
       "cannot_connect": "Falha ao conectar",
-      "invalid_auth": "Autenticação inválida",
-      "service_error": "Serviço indisponível",
+      "invalid_auth": "Autentica\u00e7\u00e3o inv\u00e1lida",
+      "service_error": "Servi\u00e7o indispon\u00edvel",
       "unknown": "Erro inesperado"
     },
     "step": {
@@ -162,16 +162,16 @@
       "init": {
         "menu_options": {
           "barcode_pin": "Perfil da biblioteca & Palavra-passe/PIN",
-          "scan_interval": "Intervalo de atualização"
+          "scan_interval": "Intervalo de atualiza\u00e7\u00e3o"
         },
-        "title": "Alterar opções"
+        "title": "Alterar op\u00e7\u00f5es"
       },
       "scan_interval": {
         "data": {
-          "scan_interval": "Intervalo de atualização (min)"
+          "scan_interval": "Intervalo de atualiza\u00e7\u00e3o (min)"
         },
-        "description": "Altere o intervalo de atualização para atualizar os sensores",
-        "title": "Intervalo de atualização"
+        "description": "Altere o intervalo de atualiza\u00e7\u00e3o para atualizar os sensores",
+        "title": "Intervalo de atualiza\u00e7\u00e3o"
       }
     }
   }

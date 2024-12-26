@@ -5,8 +5,8 @@
     },
     "error": {
       "cannot_connect": "Verbindung fehlgeschlagen",
-      "invalid_auth": "Ungültige authentifizierung",
-      "service_error": "Dienst nicht verfügbar",
+      "invalid_auth": "Ung\u00fcltige authentifizierung",
+      "service_error": "Dienst nicht verf\u00fcgbar",
       "unknown": "Unerwarteter fehler"
     },
     "step": {
@@ -69,7 +69,7 @@
         "name": "Bibliothek",
         "state_attributes": {
           "allowrenewals": {
-            "name": "Verlängerungen erlauben"
+            "name": "Verl\u00e4ngerungen erlauben"
           },
           "librarycatalogurl": {
             "name": "URL des bibliothekskatalogs"
@@ -77,14 +77,14 @@
           "maxhelddocuments": {
             "name": "Maximale anzahl gehaltener dokumente"
           },
-          "maxloantimeunit": {
-            "name": "Maximale ausleihzeit einheit"
+          "maxloaneddocuments": {
+            "name": "Maximale anzahl ausgeliehener dokumente"
           },
           "maxloantimes": {
             "name": "Maximale ausleihzeiten"
           },
-          "maxloaneddocuments": {
-            "name": "Maximale anzahl ausgeliehener dokumente"
+          "maxloantimeunit": {
+            "name": "Maximale ausleihzeit einheit"
           },
           "supportemail": {
             "name": "Support-e-mail"
@@ -146,8 +146,8 @@
     },
     "error": {
       "cannot_connect": "Verbindung fehlgeschlagen",
-      "invalid_auth": "Ungültige authentifizierung",
-      "service_error": "Dienst nicht verfügbar",
+      "invalid_auth": "Ung\u00fcltige authentifizierung",
+      "service_error": "Dienst nicht verf\u00fcgbar",
       "unknown": "Unerwarteter fehler"
     },
     "step": {
@@ -156,7 +156,7 @@
           "barcode": "Bibliotheksprofil",
           "pin": "Passwort / Pin-code"
         },
-        "description": "Ausführen, wenn sie ihre kontozugangsdaten auf 'cloudLibrary' geändert haben",
+        "description": "Ausf\u00fchren, wenn sie ihre kontozugangsdaten auf 'cloudLibrary' ge\u00e4ndert haben",
         "title": "Aktualisieren sie ihre zugangsdaten"
       },
       "init": {
@@ -164,13 +164,13 @@
           "barcode_pin": "Bibliotheksprofil & Passwort / Pin-code",
           "scan_interval": "Aktualisierungsintervall"
         },
-        "title": "Ändern sie die optionen"
+        "title": "\u00c4ndern sie die optionen"
       },
       "scan_interval": {
         "data": {
           "scan_interval": "Aktualisierungsintervall (min)"
         },
-        "description": "Ändern sie das aktualisierungsintervall zum auffrischen der sensoren",
+        "description": "\u00c4ndern sie das aktualisierungsintervall zum auffrischen der sensoren",
         "title": "Aktualisierungsintervall"
       }
     }
