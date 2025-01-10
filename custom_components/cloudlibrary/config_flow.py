@@ -1,4 +1,5 @@
 """Config flow to configure the cloudLibrary integration."""
+
 from abc import ABC, abstractmethod
 import logging
 from typing import Any

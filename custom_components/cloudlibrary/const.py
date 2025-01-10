@@ -1,4 +1,5 @@
 """Constants used by CloudLibrary."""
+
 import json
 from pathlib import Path
 from typing import Final

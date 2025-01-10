@@ -1,6 +1,6 @@
 {
+  "filename": "cloudlibrary.zip",
   "name": "cloudLibrary",
   "render_readme": true,
-  "zip_release": true,
-  "filename": "cloudlibrary.zip"
+  "zip_release": true
 }
