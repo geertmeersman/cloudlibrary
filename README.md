@@ -82,7 +82,7 @@ cloudLibrary sensors for
 
 ### Manual
 
-1. Copy the `custom_components/cloudlibrary` directory of this repository as `config/custom_components/cloudlibrary` in your Home Assistant instalation.
+1. Copy the `custom_components/cloudlibrary` directory of this repository as `config/custom_components/cloudlibrary` in your Home Assistant installation.
 2. Restart Home Assistant
 3. Add the 'cloudLibrary' integration via HA Settings > 'Devices and Services' > 'Integrations'
 4. Provide your cloudLibrary account details

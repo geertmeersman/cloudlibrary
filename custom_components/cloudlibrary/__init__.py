@@ -1,4 +1,5 @@
 """CloudLibrary integration."""
+
 from __future__ import annotations
 
 from datetime import timedelta
@@ -50,14 +51,14 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     storage_dir.mkdir(exist_ok=True)
     store: Store = Store(hass, 1, f"{DOMAIN}/{entry.entry_id}")
     dev_reg = dr.async_get(hass)
-    hass.data[DOMAIN][entry.entry_id][
-        "coordinator"
-    ] = coordinator = CloudLibraryDataUpdateCoordinator(
-        hass,
-        config_entry=entry,
-        dev_reg=dev_reg,
-        client=client,
-        store=store,
+    hass.data[DOMAIN][entry.entry_id]["coordinator"] = coordinator = (
+        CloudLibraryDataUpdateCoordinator(
+            hass,
+            config_entry=entry,
+            dev_reg=dev_reg,
+            client=client,
+            store=store,
+        )
     )
 
     await coordinator.async_config_entry_first_refresh()
