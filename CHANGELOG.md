@@ -1,5 +1,35 @@
 # Changelog
 
+## [v0.3.0](https://github.com/geertmeersman/cloudlibrary/tree/v0.3.0) (2025-03-24)
+
+[Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v0.2.1...v0.3.0)
+
+**Merged pull requests:**
+
+- fix: deprecation - new options flow properties [\#95](https://github.com/geertmeersman/cloudlibrary/pull/95) ([geertmeersman](https://github.com/geertmeersman))
+- build\(deps\): bump ruff from 0.9.9 to 0.11.2 [\#94](https://github.com/geertmeersman/cloudlibrary/pull/94) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.9.7 to 0.9.9 [\#91](https://github.com/geertmeersman/cloudlibrary/pull/91) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.8.6 to 0.9.7 [\#90](https://github.com/geertmeersman/cloudlibrary/pull/90) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): update pip requirement from \<24.4,\>=8.0.3 to \>=8.0.3,\<25.1 [\#86](https://github.com/geertmeersman/cloudlibrary/pull/86) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore: github sync dev-current workflow [\#82](https://github.com/geertmeersman/cloudlibrary/pull/82) ([geertmeersman](https://github.com/geertmeersman))
+- chore: codespell [\#81](https://github.com/geertmeersman/cloudlibrary/pull/81) ([geertmeersman](https://github.com/geertmeersman))
+- build\(deps\): bump ruff from 0.8.4 to 0.8.6 [\#80](https://github.com/geertmeersman/cloudlibrary/pull/80) ([dependabot[bot]](https://github.com/apps/dependabot))
+- fix: pretty-format-json [\#79](https://github.com/geertmeersman/cloudlibrary/pull/79) ([geertmeersman](https://github.com/geertmeersman))
+- build\(deps\): bump ruff from 0.8.3 to 0.8.4 [\#78](https://github.com/geertmeersman/cloudlibrary/pull/78) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.8.2 to 0.8.3 [\#77](https://github.com/geertmeersman/cloudlibrary/pull/77) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.8.0 to 0.8.2 [\#76](https://github.com/geertmeersman/cloudlibrary/pull/76) ([dependabot[bot]](https://github.com/apps/dependabot))
+- fix: github workflow delete pre-releases on release [\#74](https://github.com/geertmeersman/cloudlibrary/pull/74) ([geertmeersman](https://github.com/geertmeersman))
+- fix: beta release zip file [\#73](https://github.com/geertmeersman/cloudlibrary/pull/73) ([geertmeersman](https://github.com/geertmeersman))
+- build\(deps\): bump ruff from 0.7.4 to 0.8.0 [\#72](https://github.com/geertmeersman/cloudlibrary/pull/72) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.7.3 to 0.7.4 [\#71](https://github.com/geertmeersman/cloudlibrary/pull/71) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.7.2 to 0.7.3 [\#70](https://github.com/geertmeersman/cloudlibrary/pull/70) ([dependabot[bot]](https://github.com/apps/dependabot))
+- docs: release template [\#69](https://github.com/geertmeersman/cloudlibrary/pull/69) ([geertmeersman](https://github.com/geertmeersman))
+- build\(deps\): bump ruff from 0.7.1 to 0.7.2 [\#68](https://github.com/geertmeersman/cloudlibrary/pull/68) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump colorlog from 6.8.2 to 6.9.0 [\#67](https://github.com/geertmeersman/cloudlibrary/pull/67) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): update pip requirement from \<24.3,\>=8.0.3 to \>=8.0.3,\<24.4 [\#66](https://github.com/geertmeersman/cloudlibrary/pull/66) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.7.0 to 0.7.1 [\#65](https://github.com/geertmeersman/cloudlibrary/pull/65) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.6.9 to 0.7.0 [\#64](https://github.com/geertmeersman/cloudlibrary/pull/64) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.2.1](https://github.com/geertmeersman/cloudlibrary/tree/v0.2.1) (2024-10-08)
 
 [Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v0.2.0...v0.2.1)
