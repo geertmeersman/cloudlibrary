@@ -1,5 +1,43 @@
 # Changelog
 
+## [v1.0.0](https://github.com/geertmeersman/cloudlibrary/tree/v1.0.0) (2025-10-16)
+
+[Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v0.3.0...v1.0.0)
+
+**Merged pull requests:**
+
+- fix: Optimized with concurrent data retrieval for better performance and using HA http sessions [\#135](https://github.com/geertmeersman/cloudlibrary/pull/135) ([geertmeersman](https://github.com/geertmeersman))
+- chore\(deps\): bump ruff from 0.13.3 to 0.14.0 [\#134](https://github.com/geertmeersman/cloudlibrary/pull/134) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump github/codeql-action from 3 to 4 [\#133](https://github.com/geertmeersman/cloudlibrary/pull/133) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.13.2 to 0.13.3 [\#131](https://github.com/geertmeersman/cloudlibrary/pull/131) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.13.1 to 0.13.2 [\#130](https://github.com/geertmeersman/cloudlibrary/pull/130) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.13.0 to 0.13.1 [\#129](https://github.com/geertmeersman/cloudlibrary/pull/129) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.12.12 to 0.13.0 [\#128](https://github.com/geertmeersman/cloudlibrary/pull/128) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.12.11 to 0.12.12 [\#127](https://github.com/geertmeersman/cloudlibrary/pull/127) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump actions/stale from 9 to 10 [\#126](https://github.com/geertmeersman/cloudlibrary/pull/126) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump actions/setup-python from 5 to 6 [\#125](https://github.com/geertmeersman/cloudlibrary/pull/125) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump actions/github-script from 7 to 8 [\#124](https://github.com/geertmeersman/cloudlibrary/pull/124) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.12.10 to 0.12.11 [\#123](https://github.com/geertmeersman/cloudlibrary/pull/123) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.12.9 to 0.12.10 [\#122](https://github.com/geertmeersman/cloudlibrary/pull/122) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump actions/checkout from 4 to 5 [\#121](https://github.com/geertmeersman/cloudlibrary/pull/121) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.12.8 to 0.12.9 [\#120](https://github.com/geertmeersman/cloudlibrary/pull/120) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.12.7 to 0.12.8 [\#119](https://github.com/geertmeersman/cloudlibrary/pull/119) ([dependabot[bot]](https://github.com/apps/dependabot))
+- fix: Pass config\_entry explicitly to DataUpdateCoordinator to avoid C… [\#118](https://github.com/geertmeersman/cloudlibrary/pull/118) ([geertmeersman](https://github.com/geertmeersman))
+- chore\(deps\): bump ruff from 0.12.5 to 0.12.7 [\#117](https://github.com/geertmeersman/cloudlibrary/pull/117) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): update pip requirement from \<25.2,\>=8.0.3 to \>=8.0.3,\<25.3 [\#116](https://github.com/geertmeersman/cloudlibrary/pull/116) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump hugo19941994/delete-draft-releases from 1.0.1 to 2.0.0 [\#115](https://github.com/geertmeersman/cloudlibrary/pull/115) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.12.4 to 0.12.5 [\#114](https://github.com/geertmeersman/cloudlibrary/pull/114) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.12.3 to 0.12.4 [\#113](https://github.com/geertmeersman/cloudlibrary/pull/113) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.12.2 to 0.12.3 [\#112](https://github.com/geertmeersman/cloudlibrary/pull/112) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.12.1 to 0.12.2 [\#111](https://github.com/geertmeersman/cloudlibrary/pull/111) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.12.0 to 0.12.1 [\#110](https://github.com/geertmeersman/cloudlibrary/pull/110) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump ruff from 0.11.13 to 0.12.0 [\#109](https://github.com/geertmeersman/cloudlibrary/pull/109) ([dependabot[bot]](https://github.com/apps/dependabot))
+- fix: reduce to 1 commit when releasing [\#108](https://github.com/geertmeersman/cloudlibrary/pull/108) ([geertmeersman](https://github.com/geertmeersman))
+- fix: sync dev-current workflow trigger [\#107](https://github.com/geertmeersman/cloudlibrary/pull/107) ([geertmeersman](https://github.com/geertmeersman))
+- chore\(deps\): bump ruff from 0.11.12 to 0.11.13 [\#106](https://github.com/geertmeersman/cloudlibrary/pull/106) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): bump ruff from 0.11.2 to 0.11.12 [\#105](https://github.com/geertmeersman/cloudlibrary/pull/105) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): update pip requirement from \<25.1,\>=8.0.3 to \>=8.0.3,\<25.2 [\#100](https://github.com/geertmeersman/cloudlibrary/pull/100) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.3.0](https://github.com/geertmeersman/cloudlibrary/tree/v0.3.0) (2025-03-24)
 
 [Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v0.2.1...v0.3.0)
