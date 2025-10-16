@@ -2,19 +2,21 @@
 
 from __future__ import annotations
 
+import asyncio
 from datetime import timedelta
 import logging
 from pathlib import Path
 
-from aiocloudlibrary import CloudLibraryClient
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import CONF_SCAN_INTERVAL
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers import device_registry as dr
+from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from homeassistant.helpers.storage import STORAGE_DIR, Store
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
 from requests.exceptions import ConnectionError
 
+from .client import CloudLibraryClient
 from .const import (
     CONF_BARCODE,
     CONF_LIBRARY,
@@ -39,18 +41,25 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     for platform in PLATFORMS:
         hass.data[DOMAIN][entry.entry_id].setdefault(platform, set())
 
+    session = async_get_clientsession(hass)
+
     client = CloudLibraryClient(
         barcode=entry.data[CONF_BARCODE],
         pin=entry.data[CONF_PIN],
         library=entry.data[CONF_LIBRARY],
+        session=session,
     )
+
+    await client.login()
 
     storage_dir = Path(f"{hass.config.path(STORAGE_DIR)}/{DOMAIN}")
     if storage_dir.is_file():
         storage_dir.unlink()
     storage_dir.mkdir(exist_ok=True)
     store: Store = Store(hass, 1, f"{DOMAIN}/{entry.entry_id}")
+
     dev_reg = dr.async_get(hass)
+
     hass.data[DOMAIN][entry.entry_id]["coordinator"] = coordinator = (
         CloudLibraryDataUpdateCoordinator(
             hass,
@@ -113,7 +122,6 @@ class CloudLibraryDataUpdateCoordinator(DataUpdateCoordinator):
             _LOGGER,
             name=DOMAIN,
             update_interval=timedelta(minutes=config_entry.data[CONF_SCAN_INTERVAL]),
-            config_entry=config_entry,
         )
         self._debug = _LOGGER.isEnabledFor(logging.DEBUG)
         self._config_entry = config_entry
@@ -129,11 +137,26 @@ class CloudLibraryDataUpdateCoordinator(DataUpdateCoordinator):
         await super().async_config_entry_first_refresh()
 
     async def get_data(self) -> dict | None:
-        """Get the data from the cloudLibrary client."""
+        """Fetch all Cloud Library data concurrently."""
+        tasks = {
+            "featured": self.client.featured(),
+            "current": self.client.current(),
+            "holds": self.client.holds(),
+            "saved": self.client.saved(),
+            "history": self.client.history(),
+            "email": self.client.email(),
+        }
 
-        tasks = ["featured", "current", "holds", "saved", "history", "email"]
+        results = await asyncio.gather(*tasks.values(), return_exceptions=True)
 
-        self.data = {key: await getattr(self.client, key)() for key in tasks}
+        # Handle exceptions per API call
+        self.data = {}
+        for key, result in zip(tasks.keys(), results):
+            if isinstance(result, Exception):
+                _LOGGER.warning("Failed to fetch %s: %s", key, result)
+                self.data[key] = None
+            else:
+                self.data[key] = result
 
         await self.store.async_save(self.data)
 

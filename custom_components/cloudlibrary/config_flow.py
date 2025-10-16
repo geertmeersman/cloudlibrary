@@ -4,7 +4,6 @@ from abc import ABC, abstractmethod
 import logging
 from typing import Any
 
-from aiocloudlibrary import CloudLibraryClient
 from homeassistant.config_entries import ConfigEntry, ConfigFlow, OptionsFlow
 from homeassistant.const import CONF_SCAN_INTERVAL
 from homeassistant.core import callback
@@ -20,6 +19,7 @@ from homeassistant.helpers.selector import (
 from homeassistant.helpers.typing import UNDEFINED
 import voluptuous as vol
 
+from .client import CloudLibraryClient
 from .const import (
     CONF_BARCODE,
     CONF_LIBRARY,
