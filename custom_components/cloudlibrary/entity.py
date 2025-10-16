@@ -1,4 +1,7 @@
-"""Base CloudLibrary entity."""
+"""Base CloudLibrary entity for Home Assistant.
+
+Defines the CloudLibraryEntity class as a base for all sensor entities.
+"""
 
 from __future__ import annotations
 
@@ -17,16 +20,10 @@ _LOGGER = logging.getLogger(__name__)
 
 
 class CloudLibraryEntity(CoordinatorEntity[CloudLibraryDataUpdateCoordinator]):
-    """Base CloudLibrary entity."""
+    """Base CloudLibrary entity using a coordinator."""
 
     _attr_attribution = ATTRIBUTION
-    _unrecorded_attributes = frozenset(
-        {
-            "patron_items",
-            "messages",
-            "last_synced",
-        }
-    )
+    _unrecorded_attributes = frozenset({"patron_items", "messages", "last_synced"})
 
     def __init__(
         self,
@@ -34,7 +31,7 @@ class CloudLibraryEntity(CoordinatorEntity[CloudLibraryDataUpdateCoordinator]):
         description: EntityDescription,
         device_name: str,
     ) -> None:
-        """Initialize CloudLibrary entities."""
+        """Initialize the CloudLibrary entity."""
         super().__init__(coordinator)
         self.entity_description = description
         self._identifier = f"{description.key}"
@@ -53,25 +50,38 @@ class CloudLibraryEntity(CoordinatorEntity[CloudLibraryDataUpdateCoordinator]):
     @callback
     def _handle_coordinator_update(self) -> None:
         """Handle updated data from the coordinator."""
-        if len(self.coordinator.data):
+        if self.entity_description.key in self.coordinator.data:
             self.last_synced = datetime.now()
             self.async_write_ha_state()
-            return
-        _LOGGER.debug(
-            f"[CloudLibraryEntity|_handle_coordinator_update] {self._attr_unique_id}: async_write_ha_state ignored since API fetch failed or not found",
-            True,
-        )
+        else:
+            _LOGGER.debug(
+                f"[CloudLibraryEntity|_handle_coordinator_update] "
+                f"{self._attr_unique_id}: async_write_ha_state ignored, data missing"
+            )
 
     @property
     def item(self) -> dict:
-        """Return the data for this entity."""
-        return self.coordinator.data[self.entity_description.key]
+        """Return the coordinator data for this entity."""
+        return self.coordinator.data.get(self.entity_description.key, {})
 
     @property
     def available(self) -> bool:
-        """Return if the entity is available."""
-        return super().available and self.entity_description.available_fn(self.item)
+        """Return True if entity is available."""
+        try:
+            return super().available and (
+                self.entity_description.available_fn(self.item)
+                if self.entity_description.available_fn
+                else True
+            )
+        except Exception as e:
+            _LOGGER.warning(
+                "Error checking availability for %s: %s", self._attr_unique_id, e
+            )
+            return False
 
     async def async_update(self) -> None:
-        """Update the entity.  Only used by the generic entity update service."""
+        """Update the entity.
+
+        This method is a no-op because updates are handled via the coordinator.
+        """
         return
