@@ -1,4 +1,7 @@
-"""CloudLibrary sensor platform."""
+"""CloudLibrary sensor platform for Home Assistant.
+
+Defines sensors for patron data, library information, notifications, and user-specific metrics.
+"""
 
 from __future__ import annotations
 
@@ -13,7 +16,6 @@ from homeassistant.components.sensor import (
 )
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
-from homeassistant.helpers.entity import EntityDescription
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.typing import StateType
 
@@ -42,17 +44,19 @@ SENSOR_TYPES: tuple[CloudLibrarySensorDescription, ...] = (
         translation_key="user",
         unique_id_fn=lambda data: "user",
         icon="mdi:face-man",
-        available_fn=lambda data: data.get("display") is not None,
-        value_fn=lambda data: data.get("display").get("patron").get("name"),
-        attributes_fn=lambda data: data.get("display").get("patron"),
+        available_fn=lambda data: (data.get("display") or {}).get("patron") is not None,
+        value_fn=lambda data: ((data.get("display") or {}).get("patron") or {}).get(
+            "name"
+        ),
+        attributes_fn=lambda data: (data.get("display") or {}).get("patron"),
     ),
     CloudLibrarySensorDescription(
         key="email",
         translation_key="email",
         unique_id_fn=lambda data: "email",
         icon="mdi:email",
-        available_fn=lambda data: data.get("settings") is not None,
-        value_fn=lambda data: data.get("settings").get("email"),
+        available_fn=lambda data: (data.get("settings") is not None),
+        value_fn=lambda data: (data.get("settings") or {}).get("email"),
         attributes_fn=lambda data: data.get("settings"),
     ),
     CloudLibrarySensorDescription(
@@ -61,7 +65,7 @@ SENSOR_TYPES: tuple[CloudLibrarySensorDescription, ...] = (
         unique_id_fn=lambda data: "settings",
         icon="mdi:cog",
         available_fn=lambda data: data.get("settings") is not None,
-        value_fn=lambda data: len(data.get("settings", [])),
+        value_fn=lambda data: len(data.get("settings") or []),
         attributes_fn=lambda data: data.get("settings"),
     ),
     CloudLibrarySensorDescription(
@@ -70,7 +74,7 @@ SENSOR_TYPES: tuple[CloudLibrarySensorDescription, ...] = (
         unique_id_fn=lambda data: "notifications",
         icon="mdi:message-badge",
         available_fn=lambda data: data.get("notifications") is not None,
-        value_fn=lambda data: data.get("notifications").get("unreadCount"),
+        value_fn=lambda data: (data.get("notifications") or {}).get("unreadCount"),
         attributes_fn=lambda data: {
             "messages": [
                 {
@@ -100,7 +104,7 @@ SENSOR_TYPES: tuple[CloudLibrarySensorDescription, ...] = (
                         for attachment in msg.get("objectAttachments", {}).values()
                     ],
                 }
-                for msg in data.get("notifications", {}).get("messages", [])
+                for msg in (data.get("notifications") or {}).get("messages", [])
             ]
         },
     ),
@@ -109,24 +113,26 @@ SENSOR_TYPES: tuple[CloudLibrarySensorDescription, ...] = (
         translation_key="library",
         unique_id_fn=lambda data: "library",
         icon="mdi:library",
-        available_fn=lambda data: data.get("config").get("libraryId") is not None,
-        value_fn=lambda data: data.get("config").get("displayName"),
+        available_fn=lambda data: (
+            (data.get("config") or {}).get("libraryId") is not None
+        ),
+        value_fn=lambda data: (data.get("config") or {}).get("displayName"),
         attributes_fn=lambda data: {
-            "supportEmail": data.get("config").get("supportEmail"),
-            "libraryCatalogUrl": data.get("config").get("libraryCatalogUrl"),
-            "maxLoanTimes": data.get("config")
-            .get("cloudLibraryConfiguration")
-            .get("maxLoanTimes"),
-            "maxLoanTimeUnit": data.get("config")
-            .get("cloudLibraryConfiguration")
-            .get("maxLoanTimeUnit"),
-            "maxLoanedDocuments": data.get("config")
-            .get("cloudLibraryConfiguration")
-            .get("maxLoanedDocuments"),
-            "maxHeldDocuments": data.get("config")
-            .get("cloudLibraryConfiguration")
-            .get("maxHeldDocuments"),
-            "allowRenewals": data.get("config").get("allowRenewals"),
+            "supportEmail": (data.get("config") or {}).get("supportEmail"),
+            "libraryCatalogUrl": (data.get("config") or {}).get("libraryCatalogUrl"),
+            "maxLoanTimes": (
+                (data.get("config") or {}).get("cloudLibraryConfiguration") or {}
+            ).get("maxLoanTimes"),
+            "maxLoanTimeUnit": (
+                (data.get("config") or {}).get("cloudLibraryConfiguration") or {}
+            ).get("maxLoanTimeUnit"),
+            "maxLoanedDocuments": (
+                (data.get("config") or {}).get("cloudLibraryConfiguration") or {}
+            ).get("maxLoanedDocuments"),
+            "maxHeldDocuments": (
+                (data.get("config") or {}).get("cloudLibraryConfiguration") or {}
+            ).get("maxHeldDocuments"),
+            "allowRenewals": (data.get("config") or {}).get("allowRenewals"),
         },
     ),
     CloudLibrarySensorDescription(
@@ -134,12 +140,12 @@ SENSOR_TYPES: tuple[CloudLibrarySensorDescription, ...] = (
         translation_key="current",
         unique_id_fn=lambda data: "current",
         icon="mdi:book-open-page-variant",
-        available_fn=lambda data: data.get("patronItems") is not None,
-        value_fn=lambda data: len(data.get("patronItems", [])),
+        available_fn=lambda data: (data.get("patronItems") is not None),
+        value_fn=lambda data: len(data.get("patronItems") or []),
         attributes_fn=lambda data: {
             "patron_items": [
                 {key: item.get(key) for key in PATRON_ITEM_KEYS}
-                for item in data.get("patronItems", [])
+                for item in data.get("patronItems") or []
             ]
         },
     ),
@@ -148,12 +154,12 @@ SENSOR_TYPES: tuple[CloudLibrarySensorDescription, ...] = (
         translation_key="holds",
         unique_id_fn=lambda data: "holds",
         icon="mdi:content-save-alert",
-        available_fn=lambda data: data.get("patronItems") is not None,
-        value_fn=lambda data: len(data.get("patronItems", [])),
+        available_fn=lambda data: (data.get("patronItems") is not None),
+        value_fn=lambda data: len(data.get("patronItems") or []),
         attributes_fn=lambda data: {
             "patron_items": [
                 {key: item.get(key) for key in PATRON_ITEM_KEYS}
-                for item in data.get("patronItems", [])
+                for item in data.get("patronItems") or []
             ]
         },
     ),
@@ -162,12 +168,12 @@ SENSOR_TYPES: tuple[CloudLibrarySensorDescription, ...] = (
         translation_key="saved",
         unique_id_fn=lambda data: "saved",
         icon="mdi:content-save-all",
-        available_fn=lambda data: data.get("patronItems") is not None,
-        value_fn=lambda data: len(data.get("patronItems", [])),
+        available_fn=lambda data: (data.get("patronItems") is not None),
+        value_fn=lambda data: len(data.get("patronItems") or []),
         attributes_fn=lambda data: {
             "patron_items": [
                 {key: item.get(key) for key in PATRON_ITEM_KEYS}
-                for item in data.get("patronItems", [])
+                for item in data.get("patronItems") or []
             ]
         },
     ),
@@ -176,12 +182,12 @@ SENSOR_TYPES: tuple[CloudLibrarySensorDescription, ...] = (
         translation_key="history",
         unique_id_fn=lambda data: "history",
         icon="mdi:bookshelf",
-        available_fn=lambda data: data.get("patronItems") is not None,
-        value_fn=lambda data: len(data.get("patronItems", [])),
+        available_fn=lambda data: (data.get("patronItems") is not None),
+        value_fn=lambda data: len(data.get("patronItems") or []),
         attributes_fn=lambda data: {
             "patron_items": [
                 {key: item.get(key) for key in PATRON_ITEM_KEYS}
-                for item in data.get("patronItems", [])
+                for item in data.get("patronItems") or []
             ]
         },
     ),
@@ -193,25 +199,24 @@ async def async_setup_entry(
     entry: ConfigEntry,
     async_add_entities: AddEntitiesCallback,
 ) -> None:
-    """Set up the CloudLibrary sensors."""
-    _LOGGER.debug("[sensor|async_setup_entry|async_add_entities|start]")
+    """Set up the CloudLibrary sensors based on the coordinator's data."""
+    _LOGGER.debug("[sensor|async_setup_entry] Starting sensor setup")
+
     coordinator: CloudLibraryDataUpdateCoordinator = hass.data[DOMAIN][entry.entry_id][
         "coordinator"
     ]
-
     device_name = entry.data[CONF_BARCODE]
-    entities: list[CloudLibrarySensor] = []
 
+    entities: list[CloudLibrarySensor] = []
     for sensor_type in SENSOR_TYPES:
-        _LOGGER.debug(f"Searching for {sensor_type.key}-{sensor_type.translation_key}")
         if sensor_type.key in coordinator.data:
             entities.append(CloudLibrarySensor(coordinator, sensor_type, device_name))
+
     async_add_entities(entities)
-    return
 
 
 class CloudLibrarySensor(CloudLibraryEntity, RestoreSensor, SensorEntity):
-    """Representation of an CloudLibrary sensor."""
+    """Representation of a CloudLibrary sensor entity."""
 
     entity_description: CloudLibrarySensorDescription
     _attr_has_entity_name = True
@@ -219,10 +224,10 @@ class CloudLibrarySensor(CloudLibraryEntity, RestoreSensor, SensorEntity):
     def __init__(
         self,
         coordinator: CloudLibraryDataUpdateCoordinator,
-        description: EntityDescription,
+        description: CloudLibrarySensorDescription,
         device_name: str,
     ) -> None:
-        """Set entity ID."""
+        """Initialize the CloudLibrary sensor entity."""
         super().__init__(coordinator, description, device_name)
         self.entity_id = f"sensor.{DOMAIN}_{self.entity_description.translation_key}"
         self._value: StateType = None
@@ -230,12 +235,12 @@ class CloudLibrarySensor(CloudLibraryEntity, RestoreSensor, SensorEntity):
     @property
     def native_value(self) -> StateType:
         """Return the value reported by the sensor."""
-        if self.coordinator.data is not None:
+        if self.coordinator.data is not None and self.entity_description.value_fn:
             return self.entity_description.value_fn(self.item)
         return self._value
 
     async def async_added_to_hass(self) -> None:
-        """Handle entity which will be added."""
+        """Restore state when entity is added to HA."""
         await super().async_added_to_hass()
         if self.coordinator.data is None:
             sensor_data = await self.async_get_last_sensor_data()
@@ -243,31 +248,31 @@ class CloudLibrarySensor(CloudLibraryEntity, RestoreSensor, SensorEntity):
                 _LOGGER.debug(f"Restoring latest data for {self.entity_id}")
                 self._value = sensor_data.native_value
             else:
-                _LOGGER.debug(
-                    f"Restoring latest - waiting for coordinator refresh {self.entity_id}"
-                )
+                _LOGGER.debug(f"Waiting for coordinator refresh for {self.entity_id}")
                 await self.coordinator.async_request_refresh()
         else:
-            self._value = self.entity_description.value_fn(self.item)
+            self._value = (
+                self.entity_description.value_fn(self.item)
+                if self.entity_description.value_fn
+                else None
+            )
 
     @property
     def entity_picture(self) -> str | None:
-        """Return the entity picture to use in the frontend, if any."""
-        if self.entity_description.entity_picture_fn is None:
-            return None
-        return self.entity_description.entity_picture_fn(self.item)
+        """Return the entity picture for the frontend, if any."""
+        return (
+            self.entity_description.entity_picture_fn(self.item)
+            if self.entity_description.entity_picture_fn
+            else None
+        )
 
     @property
-    def extra_state_attributes(self):
-        """Return attributes for sensor."""
+    def extra_state_attributes(self) -> dict:
+        """Return additional state attributes for the sensor."""
         if not self.coordinator.data:
             return {}
-        attributes = {
-            "last_synced": self.last_synced,
-        }
-        if (
-            self.entity_description.attributes_fn
-            and self.entity_description.attributes_fn(self.item) is not None
-        ):
-            return attributes | self.entity_description.attributes_fn(self.item)
+        attributes = {"last_synced": self.last_synced}
+        if self.entity_description.attributes_fn:
+            fn_attrs = self.entity_description.attributes_fn(self.item) or {}
+            attributes.update(fn_attrs)
         return attributes

@@ -10,6 +10,12 @@ PLATFORMS: Final = [Platform.SENSOR]
 
 ATTRIBUTION: Final = "Data provided by cloudLibrary"
 
+BASE_URL = "https://ebook.yourcloudlibrary.com"
+HEADERS = {
+    "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+}
+
 DEFAULT_SCAN_INTERVAL = 15
 SCAN_INTERVAL_MIN = 10
 SCAN_INTERVAL_MAX = 1440
