@@ -1,5 +1,23 @@
 # Changelog
 
+## [v1.0.1](https://github.com/geertmeersman/cloudlibrary/tree/v1.0.1) (2025-12-14)
+
+[Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v1.0.0...v1.0.1)
+
+**Closed issues:**
+
+- Feature Request: Add Support for Custom Notification Preferences [\#132](https://github.com/geertmeersman/cloudlibrary/issues/132)
+
+**Merged pull requests:**
+
+- fix: optimized HTTP session handling for enhanced request efficiency and resource management [\#144](https://github.com/geertmeersman/cloudlibrary/pull/144) ([geertmeersman](https://github.com/geertmeersman))
+- chore\(deps\): bump actions/checkout from 5 to 6 [\#143](https://github.com/geertmeersman/cloudlibrary/pull/143) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump actions/upload-artifact from 4 to 5 [\#142](https://github.com/geertmeersman/cloudlibrary/pull/142) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore: archived ruff-actions replaced [\#141](https://github.com/geertmeersman/cloudlibrary/pull/141) ([geertmeersman](https://github.com/geertmeersman))
+- chore\(release\): improved release workflow [\#140](https://github.com/geertmeersman/cloudlibrary/pull/140) ([geertmeersman](https://github.com/geertmeersman))
+- chore\(deps\): bump ruff from 0.14.0 to 0.14.1 [\#138](https://github.com/geertmeersman/cloudlibrary/pull/138) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump colorlog from 6.9.0 to 6.10.1 [\#137](https://github.com/geertmeersman/cloudlibrary/pull/137) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v1.0.0](https://github.com/geertmeersman/cloudlibrary/tree/v1.0.0) (2025-10-16)
 
 [Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v0.3.0...v1.0.0)
