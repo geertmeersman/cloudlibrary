@@ -8,6 +8,7 @@ from homeassistant.config_entries import ConfigEntry, ConfigFlow, OptionsFlow
 from homeassistant.const import CONF_SCAN_INTERVAL
 from homeassistant.core import callback
 from homeassistant.data_entry_flow import FlowHandler, FlowResult
+from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from homeassistant.helpers.selector import (
     NumberSelector,
     NumberSelectorConfig,
@@ -63,10 +64,12 @@ class CloudLibraryCommonFlow(ABC, FlowHandler):
     async def async_validate_input(self, user_input: dict[str, Any]) -> None:
         """Validate user credentials."""
 
+        session = async_get_clientsession(self.hass)
         client = CloudLibraryClient(
             barcode=user_input[CONF_BARCODE],
             pin=user_input[CONF_PIN],
             library=user_input[CONF_LIBRARY],
+            session=session,
         )
 
         return await self.hass.async_add_executor_job(client.featured)
