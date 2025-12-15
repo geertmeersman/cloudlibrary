@@ -24,6 +24,14 @@
   },
   "entity": {
     "sensor": {
+      "canborrow": {
+        "name": "Ausleihbar",
+        "state_attributes": {
+          "patron_items": {
+            "name": "Items"
+          }
+        }
+      },
       "current": {
         "name": "Aktuell",
         "state_attributes": {

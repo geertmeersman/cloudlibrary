@@ -178,6 +178,27 @@ SENSOR_TYPES: tuple[CloudLibrarySensorDescription, ...] = (
         },
     ),
     CloudLibrarySensorDescription(
+        key="saved",
+        translation_key="canborrow",
+        unique_id_fn=lambda data: "canborrow",
+        icon="mdi:book-check",
+        available_fn=lambda data: (data.get("patronItems") is not None),
+        value_fn=lambda data: len(
+            [
+                item
+                for item in (data.get("patronItems") or [])
+                if item.get("canBorrow") is True
+            ]
+        ),
+        attributes_fn=lambda data: {
+            "patron_items": [
+                {key: item.get(key) for key in PATRON_ITEM_KEYS}
+                for item in (data.get("patronItems") or [])
+                if item.get("canBorrow") is True
+            ]
+        },
+    ),
+    CloudLibrarySensorDescription(
         key="history",
         translation_key="history",
         unique_id_fn=lambda data: "history",

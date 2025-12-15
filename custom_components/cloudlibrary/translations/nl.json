@@ -24,6 +24,14 @@
   },
   "entity": {
     "sensor": {
+      "canborrow": {
+        "name": "Ontleenbaar",
+        "state_attributes": {
+          "patron_items": {
+            "name": "Items"
+          }
+        }
+      },
       "current": {
         "name": "Huidige",
         "state_attributes": {
