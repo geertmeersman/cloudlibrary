@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.1.0](https://github.com/geertmeersman/cloudlibrary/tree/v1.1.0) (2025-12-15)
+
+[Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v1.0.1...v1.1.0)
+
+**Merged pull requests:**
+
+- feat: Added a new "Borrowable" sensor showing the count of items available to borrow [\#146](https://github.com/geertmeersman/cloudlibrary/pull/146) ([geertmeersman](https://github.com/geertmeersman))
+- chore\(deps\): bump actions/upload-artifact from 5 to 6 [\#145](https://github.com/geertmeersman/cloudlibrary/pull/145) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v1.0.1](https://github.com/geertmeersman/cloudlibrary/tree/v1.0.1) (2025-12-14)
 
 [Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v1.0.0...v1.0.1)
