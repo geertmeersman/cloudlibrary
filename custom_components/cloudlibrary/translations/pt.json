@@ -24,7 +24,7 @@
   },
   "entity": {
     "sensor": {
-      "canBorrow": {
+      "canborrow": {
         "name": "Emprest\u00e1vel",
         "state_attributes": {
           "patron_items": {

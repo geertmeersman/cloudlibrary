@@ -24,7 +24,7 @@
   },
   "entity": {
     "sensor": {
-      "canBorrow": {
+      "canborrow": {
         "name": "Ausleihbar",
         "state_attributes": {
           "patron_items": {

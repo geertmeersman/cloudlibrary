@@ -24,7 +24,7 @@
   },
   "entity": {
     "sensor": {
-      "canBorrow": {
+      "canborrow": {
         "name": "Borrowable",
         "state_attributes": {
           "patron_items": {
