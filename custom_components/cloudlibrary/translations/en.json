@@ -24,6 +24,14 @@
   },
   "entity": {
     "sensor": {
+      "canBorrow": {
+        "name": "Borrowable",
+        "state_attributes": {
+          "patron_items": {
+            "name": "Items"
+          }
+        }
+      },
       "current": {
         "name": "Current",
         "state_attributes": {
