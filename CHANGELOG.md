@@ -1,5 +1,23 @@
 # Changelog
 
+## [v1.1.1](https://github.com/geertmeersman/cloudlibrary/tree/v1.1.1) (2026-10-20)
+
+[Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v1.1.0...v1.1.1)
+
+**Merged pull requests:**
+
+- chore\(release\): handle fallback version for release tagging and notif… [\#157](https://github.com/geertmeersman/cloudlibrary/pull/157) ([geertmeersman](https://github.com/geertmeersman))
+- Add local brand assets [\#156](https://github.com/geertmeersman/cloudlibrary/pull/156) ([frenck](https://github.com/frenck))
+- chore\(deps\): bump EndBug/add-and-commit from 10 to 11 [\#155](https://github.com/geertmeersman/cloudlibrary/pull/155) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump actions/stale from 10 to 11 [\#154](https://github.com/geertmeersman/cloudlibrary/pull/154) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump actions/checkout from 6 to 7 [\#153](https://github.com/geertmeersman/cloudlibrary/pull/153) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump actions/dependency-review-action from 4 to 5 [\#152](https://github.com/geertmeersman/cloudlibrary/pull/152) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump actions/github-script from 8 to 9 [\#151](https://github.com/geertmeersman/cloudlibrary/pull/151) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump hugo19941994/delete-draft-releases from 2.0.0 to 3.0.0 [\#150](https://github.com/geertmeersman/cloudlibrary/pull/150) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump EndBug/add-and-commit from 9 to 10 [\#149](https://github.com/geertmeersman/cloudlibrary/pull/149) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump release-drafter/release-drafter from 6 to 7 [\#148](https://github.com/geertmeersman/cloudlibrary/pull/148) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump actions/upload-artifact from 6 to 7 [\#147](https://github.com/geertmeersman/cloudlibrary/pull/147) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v1.1.0](https://github.com/geertmeersman/cloudlibrary/tree/v1.1.0) (2025-12-15)
 
 [Full Changelog](https://github.com/geertmeersman/cloudlibrary/compare/v1.0.1...v1.1.0)
