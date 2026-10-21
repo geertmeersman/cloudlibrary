@@ -44,6 +44,7 @@ cloudLibrary sensors for
 [![manifest version](https://img.shields.io/github/manifest-json/v/geertmeersman/cloudlibrary/master?filename=custom_components%2Fcloudlibrary%2Fmanifest.json)](https://github.com/geertmeersman/cloudlibrary)
 [![github release](https://img.shields.io/github/v/release/geertmeersman/cloudlibrary?logo=github)](https://github.com/geertmeersman/cloudlibrary/releases)
 [![github release date](https://img.shields.io/github/release-date/geertmeersman/cloudlibrary)](https://github.com/geertmeersman/cloudlibrary/releases)
+[![Downloads (latest release)](https://img.shields.io/github/downloads/geertmeersman/cloudlibrary/latest/total)](https://github.com/geertmeersman/cloudlibrary/releases/latest)
 [![github last-commit](https://img.shields.io/github/last-commit/geertmeersman/cloudlibrary)](https://github.com/geertmeersman/cloudlibrary/commits)
 [![github contributors](https://img.shields.io/github/contributors/geertmeersman/cloudlibrary)](https://github.com/geertmeersman/cloudlibrary/graphs/contributors)
 [![github commit activity](https://img.shields.io/github/commit-activity/y/geertmeersman/cloudlibrary?logo=github)](https://github.com/geertmeersman/cloudlibrary/commits/main)
